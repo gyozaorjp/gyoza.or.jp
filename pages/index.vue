@@ -24,10 +24,10 @@ const yyyymmdd = (datetime?: string) => {
         </p>
         <ul class="flex flex-col items-center gap-2 text-xl">
           <li>
-            <a role="button" href="" class="btn btn-wide btn-primary text-white">焼き餃子協会について</a>
+            <a role="button" href="#about" class="btn btn-wide btn-primary text-white">焼き餃子協会について</a>
           </li>
           <li>
-            <a role="button" href="" class="btn btn-wide btn-primary text-white">入会案内</a>
+            <a role="button" href="#entry" class="btn btn-wide btn-primary text-white">入会案内</a>
           </li>
         </ul>
       </div>
@@ -63,15 +63,17 @@ const yyyymmdd = (datetime?: string) => {
       </p>
     </section>
 
-    <section class="mt-20 hero sm:h-screen bg-cover" style="background-image:url(/img/top/about_bg@pc.jpg)">
+    <section id="about" class="mt-20 hero sm:h-screen bg-cover" style="background-image:url(/img/top/about_bg@pc.jpg)">
       <div class="hero-overlay bg-opacity-70 bg-stone-900/70"></div>
       <div class="hero-content flex-col sm:flex-row">
         <div class="sm:w-1/3 text-white">
           <h2 class="text-xl">一般社団法人焼き餃子協会とは</h2>
           <p class="mt-4 leading-relaxed">
-            世界には餃子（またはそれに似た料理）がさまざまに存在します。<br />
-            日本では焼き餃子が独自に発達し、多様な具による餃子が開発されて、通販で購入できる数だけでも1500種類以上存在します。<br />
-            一般社団法人焼き餃子協会は、消費者がより美味しい餃子を楽しむ社会を目指して、餃子や油・調味料そして調理器具などの餃子に関連する業界の発展を支援し、また消費者にも美味しい餃子の焼き方や食べ方などの情報提供を行って参ります。
+            世界には餃子（またはそれに似た料理）がさまざまにありますが、
+            日本では焼き餃子が独自に発達し、多様な材料を包み込んだ餃子が全国各地で開発されてきました。現在、通販で購入できる数だけでも1500種類以上存在しています。
+          </p>
+          <p class="mt-4 leading-relaxed">
+            一般社団法人焼き餃子協会は、美味しい餃子を楽しむことができる社会を目指して、餃子や油・調味料そして調理器具など餃子に関連する業界の発展を支援し、また消費者にも美味しい餃子の焼き方や食べ方などの情報提供を行って参ります。
           </p>
         </div>
         <p>
@@ -80,7 +82,7 @@ const yyyymmdd = (datetime?: string) => {
       </div>
     </section>
 
-    <section class="container mx-auto mt-16 p-4 flex flex-col items-center">
+    <section id="entry" class="container mx-auto mt-16 p-4 flex flex-col items-center">
       <header class="flex justify-center items-center gap-4">
         <img src="/img/common/ic_h_entry_01.png" class="h-24 sm:h-36" alt="" />
         <h1 class="text-2xl sm:text-5xl">入会のご案内</h1>
@@ -196,43 +198,31 @@ const yyyymmdd = (datetime?: string) => {
           </table>
         </div>
 
-        <div class="mt-8 grid sm:grid-cols-2 gap-4">
-          <div class="card w-96 bg-white shadow-xl">
+        <div class="mt-8 grid lg:grid-cols-2 gap-4">
+          <div class="card w-96 bg-amber-50 shadow-xl">
             <div class="card-body">
-              <h2 class="card-title">法人賛助会費</h2>
-              <p>年会費 50,000円 / 1口</p>
+              <h2 class="card-title">法人賛助会員</h2>
+              <p>
+                年会費 50,000円 / 1口（非課税）<br />
+                月会費 &nbsp;&nbsp;5,000円 / 1口（非課税）
+              </p>
+              <p class="text-xs">※年会費は月割のご請求となります</p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">申込</button>
+                <button class="btn btn-primary text-white">法人賛助会員 申込</button>
               </div>
             </div>
           </div>
 
-          <div class="card w-96 bg-white shadow-xl">
+          <div class="card w-96 bg-amber-50 shadow-xl">
             <div class="card-body">
-              <h2 class="card-title">法人賛助会費</h2>
-              <p>月会費 10,000円 / 1口</p>
+              <h2 class="card-title">個人賛助会員</h2>
+              <p>
+                年会費 10,000円 / 1口（非課税）<br />
+                月会費 &nbsp;&nbsp;1,000円 / 1口（非課税）
+              </p>
+              <p class="text-xs">※年会費は月割のご請求となります</p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">申込</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="card w-96 bg-white shadow-xl">
-            <div class="card-body">
-              <h2 class="card-title">個人賛助会費</h2>
-              <p>年会費 10,000円 / 1口</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">申込</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="card w-96 bg-white shadow-xl">
-            <div class="card-body">
-              <h2 class="card-title">個人賛助会費</h2>
-              <p>月会費 1,000円 / 1口</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">申込</button>
+                <button class="btn btn-primary text-white">個人賛助会員 申込</button>
               </div>
             </div>
           </div>
@@ -241,6 +231,52 @@ const yyyymmdd = (datetime?: string) => {
 
       </section>
     </section>
+
+    <section id="contact" class="mt-20 w-full py-32 flex flex-col justify-center items-center bg-cover bg-center" style="background-image:url(/img/top/contact_bg@pc.jpg)">
+      <p class="text-5xl text-white">お問い合わせ</p>
+      <ul class="mt-4 flex flex-col sm:flex-row gap-4">
+        <li class="relative w-80 bg-white/50 hover:bg-amber-50 transition duration-500 border border-amber-400 p-4 shadow-lg text-center text-xl flex flex-col justify-center items-center">
+            <p>フォームでのお問い合わせ</p>
+            <a href="#" class="absolute inset-0"></a>
+        </li>
+        <li class="relative w-80 bg-white/50 hover:bg-amber-50 transition duration-500 border border-amber-400 p-4 shadow-lg text-center text-xl flex flex-col justify-center items-center">
+            <p>電話でのお問い合わせ<br />TEL 03-4446-6137</p>
+            <p class="text-sm">（AIによる受付となります）</p>
+            <a href="#" class="absolute inset-0"></a>
+        </li>
+      </ul>
+
+    </section>
+
+    <footer class="footer p-10 bg-base-200 text-base-content">
+      <div>
+        <img src="/img/common/symbol.png" alt="" class="w-16" />
+        <p>一般社団法人焼き餃子協会</p>
+        <p>〒140-0004 東京都品川区<br />南品川二丁目９番２５号<br />扇田ビル３０８号室</p>
+        <p>TEL 03-4446-6137</p>
+      </div> 
+      <div>
+        <span class="footer-title">協会概要</span> 
+        <a class="link link-hover" href="/#about">焼き餃子協会について</a> 
+        <a class="link link-hover" href="/#entry">入会案内</a> 
+        <a class="link link-hover" href="/#contact">お問い合わせ</a> 
+      </div> 
+      <div>
+        <span class="footer-title">Legal</span> 
+        <a class="link link-hover">定款</a>
+        <a class="link link-hover">会員規約</a>
+        <a class="link link-hover">プライバシーポリシー</a> 
+        <a class="link link-hover">特定商取引法に基づく表示</a>
+      </div>
+
+      <div>
+        <span class="footer-title">Social</span> 
+        <div class="grid grid-flow-col gap-4">
+          <a href="https://twitter.com/YakiGyozaJapan" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
+          <a href="https://www.facebook.com/yaki.gyoza.japan/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+        </div>
+      </div>
+    </footer>
   </article>
 </template>
 

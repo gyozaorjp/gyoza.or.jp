@@ -30,7 +30,7 @@ export default <Partial<Config>>{
           "primary": "#671800",
           "secondary": "#D75050",
           "accent": "#D59B6C",
-          "neutral": "#ae3b0b",
+          "neutral": "#ffffff",
           "base-100": "#e5d3b8",
           "info": "#42AEBD",
           "success": "#489380",

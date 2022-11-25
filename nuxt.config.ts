@@ -12,8 +12,8 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: {
         'data-theme': 'gyoza',
-        class: 'scroll-smooth',
-      }
+        'class': 'scroll-smooth',
+      },
     }
   },
   modules: [
