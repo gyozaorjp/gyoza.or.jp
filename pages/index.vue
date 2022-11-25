@@ -94,7 +94,7 @@ const yyyymmdd = (datetime?: string) => {
         <h2 class="mt-4 text-xl">会員種別と特典について</h2>
 
         <div class="mt-4 entry overflow-x-auto">
-          <table class="table container">
+          <table class="table w-full">
             <thead>
               <tr>
                 <th></th> 
