@@ -101,17 +101,6 @@ const yyyymmdd = (datetime?: string) => {
                 <th class="sm:text-lg text-center">法人<br />賛助会員</th> 
                 <th class="sm:text-lg text-center">個人<br />賛助会員</th> 
               </tr>
-              <tr>
-                <th></th> 
-                <th>
-                  <p class="text-right w-32 mx-auto">年会費 50,000円 / 1口</p>
-                  <p class="text-right w-32 mx-auto">月会費 10,000円 / 1口</p>
-                </th> 
-                <th>
-                  <p class="text-right w-32 mx-auto">年会費 10,000円 / 1口</p>
-                  <p class="text-right w-32 mx-auto">月会費 1,000円 / 1口</p>
-                </th> 
-              </tr>
             </thead> 
             <tbody>
               <tr>
@@ -204,31 +193,50 @@ const yyyymmdd = (datetime?: string) => {
               </tr>
 
             </tbody> 
-            <tfoot>
-              <tr>
-                <th>
-                  <p class="text-right">会費</p>
-                </th> 
-                <th>
-                  <p class="text-right w-32 mx-auto">年会費 50,000円 / 1口</p>
-                  <p class="text-right w-32 mx-auto">月会費 10,000円 / 1口</p>
-                </th> 
-                <th>
-                  <p class="text-right w-32 mx-auto">年会費 10,000円 / 1口</p>
-                  <p class="text-right w-32 mx-auto">月会費 1,000円 / 1口</p>
-                </th> 
-              </tr>
-              <tr>
-                <th></th> 
-                <th>
-                  <a href="" class="btn btn-primary text-white">法人賛助会員 申込</a>
-                </th> 
-                <th>
-                  <a href="" class="btn btn-primary text-white">個人賛助会員 申込</a>
-                </th> 
-              </tr>
-            </tfoot>
           </table>
+        </div>
+
+        <div class="mt-8 grid sm:grid-cols-2 gap-4">
+          <div class="card w-96 bg-white shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">法人賛助会費</h2>
+              <p>年会費 50,000円 / 1口</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">申込</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card w-96 bg-white shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">法人賛助会費</h2>
+              <p>月会費 10,000円 / 1口</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">申込</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card w-96 bg-white shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">個人賛助会費</h2>
+              <p>年会費 10,000円 / 1口</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">申込</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card w-96 bg-white shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">個人賛助会費</h2>
+              <p>月会費 1,000円 / 1口</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">申込</button>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </section>
@@ -244,6 +252,6 @@ const yyyymmdd = (datetime?: string) => {
   @apply font-normal whitespace-normal;
 }
 .entry tbody th {
-  @apply w-1/2 text-left;
+  @apply text-left;
 }
 </style>
