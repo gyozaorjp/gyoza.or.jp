@@ -98,8 +98,19 @@ const yyyymmdd = (datetime?: string) => {
             <thead>
               <tr>
                 <th></th> 
-                <th class="sm:text-lg">法人<br />賛助会員</th> 
-                <th class="sm:text-lg">個人<br />賛助会員</th> 
+                <th class="sm:text-lg text-center">法人<br />賛助会員</th> 
+                <th class="sm:text-lg text-center">個人<br />賛助会員</th> 
+              </tr>
+              <tr>
+                <th></th> 
+                <th>
+                  <p class="text-right w-32 mx-auto">年会費 50,000円 / 1口</p>
+                  <p class="text-right w-32 mx-auto">月会費 10,000円 / 1口</p>
+                </th> 
+                <th>
+                  <p class="text-right w-32 mx-auto">年会費 10,000円 / 1口</p>
+                  <p class="text-right w-32 mx-auto">月会費 1,000円 / 1口</p>
+                </th> 
               </tr>
             </thead> 
             <tbody>
@@ -107,7 +118,22 @@ const yyyymmdd = (datetime?: string) => {
                 <th>
                   <p>会報メール</p>
                   <p class="desc">
-                    焼き餃子協会の活動をご報告いたします。
+                    焼き餃子協会の活動を毎月の会報メールでご報告いたします
+                  </p>
+                </th>
+                <td>
+                  <img src="/img/common/ic_check.png" alt="◯" class="mx-auto" />
+                </td>
+                <td>
+                  <img src="/img/common/ic_check.png" alt="◯" class="mx-auto" />
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <p>会員限定グッズの購入</p>
+                  <p class="desc">
+                    会員証など会員限定グッズを購入できます
                   </p>
                 </th>
                 <td>
@@ -122,7 +148,8 @@ const yyyymmdd = (datetime?: string) => {
                 <th>
                   <p>逸品ぎょうざ頒布会の参加</p>
                   <p class="desc">
-                    3,960円（税込）/月で、<br />全国の逸品餃子を工場から毎月直送します。
+                    会員限定 3,960円（税込）/月<br />
+                    全国の逸品餃子を工場から毎月直送します
                   </p>
                 </th>
                 <td>
@@ -136,7 +163,8 @@ const yyyymmdd = (datetime?: string) => {
                 <th>
                   <p>gyoza.org メール</p>
                   <p class="desc">
-                    gyoza.orgのサブドメインやメールアドレスなどをご利用頂けます（※別途、年間利用契約が必要です）。
+                    会員限定 165円（税込）/月<br />
+                    gyoza.orgのメールボックスをご利用頂けます
                   </p>
                 </th>
                 <td>
@@ -146,7 +174,60 @@ const yyyymmdd = (datetime?: string) => {
                   <img src="/img/common/ic_check.png" alt="◯" class="mx-auto" />
                 </td>
               </tr>
+
+              <tr>
+                <th>
+                  <p>催事の優先案内</p>
+                  <p class="desc">
+                    焼き餃子協会が企画する催事を優先的にご案内します
+                  </p>
+                </th>
+                <td>
+                  <img src="/img/common/ic_check.png" alt="◯" class="mx-auto" />
+                </td>
+                <td>
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <p>小野寺力の肖像権利用</p>
+                  <p class="desc">
+                    小野寺力の写真や似顔絵を商品やPOPにご利用頂けます（10口以上）
+                  </p>
+                </th>
+                <td>
+                  <img src="/img/common/ic_check.png" alt="◯" class="mx-auto" />
+                </td>
+                <td>
+                </td>
+              </tr>
+
             </tbody> 
+            <tfoot>
+              <tr>
+                <th>
+                  <p class="text-right">会費</p>
+                </th> 
+                <th>
+                  <p class="text-right w-32 mx-auto">年会費 50,000円 / 1口</p>
+                  <p class="text-right w-32 mx-auto">月会費 10,000円 / 1口</p>
+                </th> 
+                <th>
+                  <p class="text-right w-32 mx-auto">年会費 10,000円 / 1口</p>
+                  <p class="text-right w-32 mx-auto">月会費 1,000円 / 1口</p>
+                </th> 
+              </tr>
+              <tr>
+                <th></th> 
+                <th>
+                  <a href="" class="btn btn-primary text-white">法人賛助会員 申込</a>
+                </th> 
+                <th>
+                  <a href="" class="btn btn-primary text-white">個人賛助会員 申込</a>
+                </th> 
+              </tr>
+            </tfoot>
           </table>
         </div>
 
