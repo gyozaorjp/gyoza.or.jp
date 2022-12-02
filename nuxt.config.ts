@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: {
         'data-theme': 'gyoza',
+        'lang': 'ja',
         'class': 'scroll-smooth',
       },
     }

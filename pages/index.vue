@@ -89,7 +89,7 @@ const yyyymmdd = (datetime?: string) => {
         <img src="/img/common/ic_h_entry_02.png" class="h-24 sm:h-36" alt="" />
       </header>
       <p class="mt-4">
-        焼き餃子協会は、焼き餃子に関連する業界間に向けて技術・情報支援を通して、<br />餃子を美味しく焼いて食べる日本の文化を世界の人々に楽しんでもらうことを目指しています。
+        焼き餃子協会は、焼き餃子に関連する技術・情報の共有を通して、<br />日本の焼き餃子文化を世界の人々に楽しんでもらうことを目指しています。
       </p>
 
       <section class="mt-4 w-full border-t-2 border-amber-700 flex flex-col items-center">
@@ -109,7 +109,8 @@ const yyyymmdd = (datetime?: string) => {
                 <th>
                   <p>会報メール</p>
                   <p class="desc">
-                    焼き餃子協会の活動を毎月の会報メールでご報告いたします
+                    焼き餃子協会の活動を毎月の会報メールでご報告いたします<br />
+                    （法人賛助会員は複数のメールアドレスをご登録頂けます）
                   </p>
                 </th>
                 <td>
@@ -137,9 +138,24 @@ const yyyymmdd = (datetime?: string) => {
 
               <tr>
                 <th>
-                  <p>逸品ぎょうざ頒布会の参加</p>
+                  <p>焼き餃子協会アワードの投票</p>
                   <p class="desc">
-                    会員限定 3,960円（税込）/月<br />
+                    今年の餃界の顔を決める<br />焼き餃子協会アワードに投票いただけます
+                  </p>
+                </th>
+                <td>
+                  <img src="/img/common/ic_check.png" alt="◯" class="mx-auto" />
+                </td>
+                <td>
+                  <img src="/img/common/ic_check.png" alt="◯" class="mx-auto" />
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <p>逸品ぎょうざ頒布会の参加権</p>
+                  <p class="desc">
+                    会員限定 +3,960円（税込）/月<br />
                     全国の逸品餃子を工場から毎月直送します
                   </p>
                 </th>
@@ -152,10 +168,11 @@ const yyyymmdd = (datetime?: string) => {
 
               <tr>
                 <th>
-                  <p>gyoza.org メール</p>
+                  <p>gyoza.org メールご利用権</p>
                   <p class="desc">
-                    会員限定 165円（税込）/月<br />
-                    gyoza.orgのメールボックスをご利用頂けます
+                    会員限定 +165円（税込）/月<br />
+                    gyoza.orgのメールボックスをご利用頂けます<br />
+                    （<a href="https://rs.sakura.ad.jp/mail/" target="_blank" class="underline decoration-dotted underline-offset-4">さくらのメールボックス</a>での提供となります）
                   </p>
                 </th>
                 <td>
@@ -170,7 +187,8 @@ const yyyymmdd = (datetime?: string) => {
                 <th>
                   <p>催事の優先案内</p>
                   <p class="desc">
-                    焼き餃子協会が企画する催事を優先的にご案内します
+                    焼き餃子協会が企画する催事を優先的にご案内します<br />
+                    （出店の可否は実績や会場都合で判断されます）
                   </p>
                 </th>
                 <td>
@@ -182,9 +200,11 @@ const yyyymmdd = (datetime?: string) => {
 
               <tr>
                 <th>
-                  <p>小野寺力の肖像権利用</p>
+                  <p>焼き餃子協会ロゴ等の利用権</p>
                   <p class="desc">
-                    小野寺力の写真や似顔絵を商品やPOPにご利用頂けます（10口以上）
+                    <strong>5口以上の法人賛助会員限定</strong><br />
+                    焼き餃子協会のロゴ等を商品やPOPにご利用頂けます<br />
+                    （ご利用内容は事前承認が必要です）
                   </p>
                 </th>
                 <td>
@@ -198,17 +218,18 @@ const yyyymmdd = (datetime?: string) => {
           </table>
         </div>
 
+        <p class="mt-4">
+          ご入会には書類審査が必要です。
+        </p>
         <div class="mt-8 grid lg:grid-cols-2 gap-4">
           <div class="card w-96 bg-amber-50 shadow-xl">
             <div class="card-body">
               <h2 class="card-title">法人賛助会員</h2>
               <p>
-                年会費 50,000円 / 1口（非課税）<br />
-                月会費 &nbsp;&nbsp;5,000円 / 1口（非課税）
+                年会費 60,000円 / 1口（非課税）※
               </p>
-              <p class="text-xs">※年会費は月割のご請求となります</p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary text-white">法人賛助会員 申込</button>
+                <button class="btn btn-primary text-white">法人賛助会員 登録審査お申込</button>
               </div>
             </div>
           </div>
@@ -216,18 +237,18 @@ const yyyymmdd = (datetime?: string) => {
           <div class="card w-96 bg-amber-50 shadow-xl">
             <div class="card-body">
               <h2 class="card-title">個人賛助会員</h2>
+              <p class="text-sm">年払か月払をお選び頂けます</p>
               <p>
-                年会費 10,000円 / 1口（非課税）<br />
-                月会費 &nbsp;&nbsp;1,000円 / 1口（非課税）
+                年会費 5,000円 / 1口（非課税）※<br />
+                月会費 &nbsp;&nbsp;500円 / 1口（非課税）
               </p>
-              <p class="text-xs">※年会費は月割のご請求となります</p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary text-white">個人賛助会員 申込</button>
+                <button class="btn btn-primary text-white">個人賛助会員 登録審査お申込</button>
               </div>
             </div>
           </div>
-
         </div>
+        <p class="mt-4 text-xs text-right">※年度途中ご入会の場合、年会費は月割計算となり、翌年度以降は1月決済となります</p>
 
       </section>
     </section>
@@ -245,38 +266,8 @@ const yyyymmdd = (datetime?: string) => {
             <a href="#" class="absolute inset-0"></a>
         </li>
       </ul>
-
     </section>
 
-    <footer class="footer p-10 bg-base-200 text-base-content">
-      <div>
-        <img src="/img/common/symbol.png" alt="" class="w-16" />
-        <p>一般社団法人焼き餃子協会</p>
-        <p>〒140-0004 東京都品川区<br />南品川二丁目９番２５号<br />扇田ビル３０８号室</p>
-        <p>TEL 03-4446-6137</p>
-      </div> 
-      <div>
-        <span class="footer-title">協会概要</span> 
-        <a class="link link-hover" href="/#about">焼き餃子協会について</a> 
-        <a class="link link-hover" href="/#entry">入会案内</a> 
-        <a class="link link-hover" href="/#contact">お問い合わせ</a> 
-      </div> 
-      <div>
-        <span class="footer-title">Legal</span> 
-        <a class="link link-hover">定款</a>
-        <a class="link link-hover">会員規約</a>
-        <a class="link link-hover">プライバシーポリシー</a> 
-        <a class="link link-hover">特定商取引法に基づく表示</a>
-      </div>
-
-      <div>
-        <span class="footer-title">Social</span> 
-        <div class="grid grid-flow-col gap-4">
-          <a href="https://twitter.com/YakiGyozaJapan" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
-          <a href="https://www.facebook.com/yaki.gyoza.japan/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
-        </div>
-      </div>
-    </footer>
   </article>
 </template>
 
@@ -285,7 +276,7 @@ const yyyymmdd = (datetime?: string) => {
   @apply transition duration-500 scale-110;
 }
 .entry .desc {
-  @apply font-normal whitespace-normal;
+  @apply text-sm font-normal whitespace-normal;
 }
 .entry tbody th {
   @apply text-left;
