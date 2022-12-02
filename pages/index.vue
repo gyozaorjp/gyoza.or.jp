@@ -36,7 +36,7 @@ const yyyymmdd = (datetime?: string) => {
     <section class="container mx-auto mt-16 p-4 flex flex-col items-center">
       <header class="flex justify-center items-center gap-4">
         <img src="/img/common/ic_h_news_01.png" class="h-24 sm:h-36" alt="" />
-        <h1 class="text-2xl sm:text-5xl">お知らせ</h1>
+        <h1 class="text-xl sm:text-5xl">お知らせ</h1>
         <img src="/img/common/ic_h_news_02.png" class="h-24 sm:h-36" alt="" />
       </header>
       <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -85,18 +85,21 @@ const yyyymmdd = (datetime?: string) => {
     <section id="entry" class="container mx-auto mt-16 p-4 flex flex-col items-center">
       <header class="flex justify-center items-center gap-4">
         <img src="/img/common/ic_h_entry_01.png" class="h-24 sm:h-36" alt="" />
-        <h1 class="text-2xl sm:text-5xl">入会のご案内</h1>
+        <h1 class="text-xl sm:text-5xl">入会のご案内</h1>
         <img src="/img/common/ic_h_entry_02.png" class="h-24 sm:h-36" alt="" />
       </header>
       <p class="mt-4">
         焼き餃子協会は、焼き餃子に関連する技術・情報の共有を通して、<br />日本の焼き餃子文化を世界の人々に楽しんでもらうことを目指しています。
       </p>
+      <p class="mt-4 text-sm">
+          ご入会にあたって、書類審査を行なっております
+        </p>
 
       <section class="mt-4 w-full border-t-2 border-amber-700 flex flex-col items-center">
         <h2 class="mt-4 text-xl">会員種別と特典について</h2>
 
-        <div class="mt-4 entry overflow-x-auto">
-          <table class="table w-full">
+        <div class="mt-4 entry">
+          <table class="table">
             <thead>
               <tr>
                 <th></th> 
@@ -218,9 +221,6 @@ const yyyymmdd = (datetime?: string) => {
           </table>
         </div>
 
-        <p class="mt-4">
-          ご入会には書類審査が必要です。
-        </p>
         <div class="mt-8 grid lg:grid-cols-2 gap-4">
           <div class="card w-96 bg-amber-50 shadow-xl">
             <div class="card-body">
@@ -248,7 +248,7 @@ const yyyymmdd = (datetime?: string) => {
             </div>
           </div>
         </div>
-        <p class="mt-4 text-xs text-right">※年度途中ご入会の場合、年会費は月割計算となり、翌年度以降は1月決済となります</p>
+        <p class="mt-4 text-xs">※年度途中ご入会の場合、年会費は月割計算となり、翌年度以降は1月決済となります</p>
 
       </section>
     </section>
@@ -279,6 +279,6 @@ const yyyymmdd = (datetime?: string) => {
   @apply text-sm font-normal whitespace-normal;
 }
 .entry tbody th {
-  @apply text-left;
+  @apply text-left px-2 md:px-0;
 }
 </style>
