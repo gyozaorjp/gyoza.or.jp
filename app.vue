@@ -23,7 +23,7 @@ useHead({
       </div> 
       <div>
         <span class="footer-title">協会概要</span> 
-        <a class="link link-hover" href="/#about">焼き餃子協会について</a> 
+        <a class="link link-hover" href="/about/">焼き餃子協会について</a> 
         <a class="link link-hover" href="/#entry">入会案内</a> 
         <a class="link link-hover" href="/#contact">お問い合わせ</a> 
       </div> 
