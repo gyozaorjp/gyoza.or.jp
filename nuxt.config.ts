@@ -6,6 +6,13 @@ export default defineNuxtConfig({
     public: {
       title: '一般社団法人焼き餃子協会',
       NOTE_API: process.env.NOTE_API,
+      HUBSPOT: {
+        REGION: process.env.HUBSPOT_REGION,
+        PORTALID: process.env.HUBSPOT_PORTALID,
+        FORM: {
+          CONTACT: process.env.HUBSPOT_FORM_CONTACT,
+        },
+      }
     }
   },
   app: {
