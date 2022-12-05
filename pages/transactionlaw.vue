@@ -4,7 +4,7 @@
 <template>
   <article>
     <header class="hero relative w-full text-white" style="background-image: url(/img/common/visual-main_bg@pc.png)">
-      <h1 class="py-20 text-3xl">特定商取引法に基づく表示</h1>
+      <h1 class="py-20 text-2xl sm:text-3xl">特定商取引法に基づく表示</h1>
     </header>
 
     <section class="mt-10 container max-w-xl mx-auto p-4">
@@ -111,8 +111,8 @@
         <dt>決済期間</dt>
         <dd>
           <ul>
-            <li>クレジットカード決済の場合はただちに処理されます</li>
-            <li>銀行振込の場合は請求書発行の翌月末までにお振り込みください</li>
+            <li>クレジットカード決済の場合は、Stripeで月に1度支払い処理されます</li>
+            <li>銀行振込の場合は、請求書発行の翌月末までに当協会の銀行口座にお振り込みください</li>
           </ul>
         </dd>
 
