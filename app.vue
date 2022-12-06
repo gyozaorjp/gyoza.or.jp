@@ -23,13 +23,13 @@ useHead({
       </div> 
       <div>
         <span class="footer-title">協会概要</span> 
-        <a class="link link-hover" href="/about/">焼き餃子協会について</a> 
-        <a class="link link-hover" href="/#entry">入会案内</a> 
-        <a class="link link-hover" href="/contact/">お問い合わせ</a> 
+        <NuxtLink class="link link-hover" to="/about/">焼き餃子協会について</NuxtLink> 
+        <NuxtLink class="link link-hover" to="/#entry">入会案内</NuxtLink> 
+        <NuxtLink class="link link-hover" to="/contact/">お問い合わせ</NuxtLink> 
       </div> 
       <div>
         <span class="footer-title">Legal</span>
-        <a class="link link-hover">定款</a>
+        <NuxtLink class="link link-hover" to="/statute/">定款</NuxtLink>
         <a class="link link-hover">会員規約</a>
         <a class="link link-hover">プライバシーポリシー</a>
         <NuxtLink to="/transactionlaw/" class="link link-hover">特定商取引法に基づく表示</NuxtLink>
