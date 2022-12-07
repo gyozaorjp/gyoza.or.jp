@@ -24,7 +24,7 @@ useHead({
       <div>
         <span class="footer-title">協会概要</span> 
         <NuxtLink class="link link-hover" to="/about/">焼き餃子協会について</NuxtLink> 
-        <NuxtLink class="link link-hover" to="/#entry">入会案内</NuxtLink> 
+        <NuxtLink class="link link-hover" to="/entry/">入会案内</NuxtLink> 
         <NuxtLink class="link link-hover" to="/contact/">お問い合わせ</NuxtLink> 
       </div> 
       <div>
