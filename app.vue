@@ -29,9 +29,10 @@ useHead({
       </div> 
       <div>
         <span class="footer-title">Legal</span>
-        <NuxtLink class="link link-hover" to="/statute/">定款</NuxtLink>
         <a class="link link-hover">会員規約</a>
-        <a class="link link-hover">プライバシーポリシー</a>
+        <NuxtLink class="link link-hover" to="/antisocialist/">反社会的勢力に対する基本方針</NuxtLink>
+        <NuxtLink class="link link-hover" to="/privacy/">プライバシーポリシー</NuxtLink>
+        <NuxtLink class="link link-hover" to="/statute/">定款</NuxtLink>
         <NuxtLink to="/transactionlaw/" class="link link-hover">特定商取引法に基づく表示</NuxtLink>
       </div>
 

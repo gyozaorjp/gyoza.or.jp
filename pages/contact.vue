@@ -36,7 +36,6 @@ onMounted(() => {
     <header class="hero relative w-full text-white" style="background-image: url(/img/common/visual-main_bg@pc.png)">
       <h1 class="py-20 text-2xl sm:text-3xl">お問い合わせ</h1>
     </header>
-    {{ config }}
 
     <section class="mt-8 container mx-auto max-w-5xl">
       <p>
