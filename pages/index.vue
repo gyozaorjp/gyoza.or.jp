@@ -229,7 +229,10 @@ const yyyymmdd = (datetime?: string) => {
                 年会費 60,000円 / 1口（非課税）※
               </p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary text-white">法人賛助会員 登録審査お申込</button>
+                <a href="https://share.hsforms.com/1g5PzUD4iTrCT5LnOfX1LNwd8bov"
+                  target="_blank" class="btn btn-primary text-white">
+                  法人賛助会員 登録審査お申込
+                </a>
               </div>
             </div>
           </div>
@@ -243,7 +246,10 @@ const yyyymmdd = (datetime?: string) => {
                 月会費 &nbsp;&nbsp;500円 / 1口（非課税）
               </p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary text-white">個人賛助会員 登録審査お申込</button>
+                <a href="https://share.hsforms.com/1A98uZetoRKy5QbDhb-XNRwd8bov"
+                  target="_blank" class="btn btn-primary text-white">
+                  個人賛助会員 登録審査お申込
+                </a>
               </div>
             </div>
           </div>
@@ -258,7 +264,7 @@ const yyyymmdd = (datetime?: string) => {
       <ul class="mt-4 flex flex-col sm:flex-row gap-4">
         <li class="relative w-80 bg-white/50 hover:bg-amber-50 transition duration-500 border border-amber-400 p-4 shadow-lg text-center text-xl flex flex-col justify-center items-center">
             <p>フォームでのお問い合わせ</p>
-            <a href="#" class="absolute inset-0"></a>
+            <a href="https://share.hsforms.com/1gPwfyg1lRKePmkYJrluR2gd8bov" target="_blank" class="absolute inset-0"></a>
         </li>
         <li class="relative w-80 bg-white/50 hover:bg-amber-50 transition duration-500 border border-amber-400 p-4 shadow-lg text-center text-xl flex flex-col justify-center items-center">
             <p>電話でのお問い合わせ<br />TEL 03-4446-6137</p>
