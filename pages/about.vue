@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <main>
+  <article>
     <header class="hero relative w-full text-white" style="background-image: url(/img/common/visual-main_bg@pc.png)">
       <h1 class="py-20 text-2xl sm:text-3xl">焼き餃子協会について</h1>
     </header>
@@ -177,7 +177,7 @@
 
     </section>
 
-  </main>
+  </article>
 </template>
 
 <style scoped lang="postcss">
