@@ -12,7 +12,10 @@ export default defineNuxtConfig({
         FORM: {
           CONTACT: process.env.HUBSPOT_FORM_CONTACT,
         },
-      }
+      },
+      gtm: {
+        id: process.env.GOOGLE_TAG_MANAGER_ID
+      },
     }
   },
   app: {
@@ -28,4 +31,5 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
   ],
+
 })
