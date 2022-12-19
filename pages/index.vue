@@ -274,6 +274,7 @@ const yyyymmdd = (datetime?: string) => {
       </ul>
     </section>
 
+    <Footer class="mt-20 footer p-10 bg-base-200 text-base-content"></Footer>
   </article>
 </template>
 
