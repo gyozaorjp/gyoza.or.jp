@@ -13,6 +13,6 @@ useHead({
     <NuxtLayout>
       <NuxtPage/>
     </NuxtLayout>
-    <Footer class="mt-20 footer p-10 bg-base-200 text-base-content"></Footer>
+    <Footer class="mt-20 footer p-10 bg-base-200 text-base-content" />
   </main>
 </template>
