@@ -10,7 +10,7 @@ const yyyymmdd = (datetime?: string) => {
 </script>
 
 <template>
-  <article>
+  <main>
     <header class="hero relative h-screen w-screen" style="background-image: url(/img/top/visual-top_img@pc.jpg)">
       <div
         class="hero-content w-68 px-7 py-10 flex flex-col justify-center items-center gap-8 text-white"
@@ -274,7 +274,7 @@ const yyyymmdd = (datetime?: string) => {
       </ul>
     </section>
 
-  </article>
+  </main>
 </template>
 
 <style scoped lang="postcss">

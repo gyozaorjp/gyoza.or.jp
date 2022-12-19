@@ -9,10 +9,7 @@ useHead({
 </script>
 
 <template>
-  <div>
-    <NuxtLayout>
-      <NuxtPage/>
-      <Footer class="mt-20 footer p-10 bg-base-200 text-base-content"></Footer>
-    </NuxtLayout>
-  </div>
+  <NuxtLayout>
+    <NuxtPage/>
+  </NuxtLayout>
 </template>
