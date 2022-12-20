@@ -1,7 +1,14 @@
+<script setup lang="ts">
+const drawer = ref(false)
+const toggle = () => {
+  drawer.value = false
+}
+</script>
+
 <template>
-  <main>
+  <div>
     <div class="drawer">
-      <input id="drawer" type="checkbox" class="drawer-toggle" />
+      <input id="drawer" v-model="drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content">
         <!-- Page content here -->
         <header class="fixed top-0 z-50 navbar bg-base-100">
@@ -17,7 +24,9 @@
           </div>
         </header>
 
-        <slot></slot>
+        <main>
+          <slot></slot>
+        </main>
 
         <div class="mt-20 bg-white">
           <Footer class="footer container mx-auto"></Footer>
@@ -29,36 +38,36 @@
         <ul class="menu p-4 w-80 bg-base-100 text-base-content">
           <!-- Sidebar content here -->
           <li>
-            <NuxtLink to="/about/">
+            <NuxtLink to="/about/" @click="toggle">
               焼き餃子協会について
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/entry/">
+            <NuxtLink to="/entry/" @click="toggle">
               入会案内
             </NuxtLink>
           </li>
 
           <li>
-            <a>会員規約</a>
+            <a @click="toggle">会員規約</a>
           </li>
           <li>
-            <NuxtLink to="/antisocialist/">
+            <NuxtLink to="/antisocialist/" @click="toggle">
               反社会的勢力に対する基本方針
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/privacy/">
+            <NuxtLink to="/privacy/" @click="toggle">
               プライバシーポリシー
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/statute/">
+            <NuxtLink to="/statute/" @click="toggle">
               定款
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/transactionlaw/">
+            <NuxtLink to="/transactionlaw/" @click="toggle">
               特定商取引法に基づく表示
             </NuxtLink>
           </li>
@@ -74,5 +83,5 @@
         </ul>
       </aside>
     </div>
-  </main>
+  </div>
 </template>

@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <article>
+  <article class="pt-12">
     <header class="hero relative w-full text-white" style="background-image: url(/img/common/visual-main_bg@pc.png)">
       <h1 class="py-20 text-2xl sm:text-3xl">特定商取引法に基づく表示</h1>
     </header>
