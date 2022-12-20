@@ -175,7 +175,7 @@ const yyyymmdd = (datetime?: string) => {
                   <p class="desc">
                     会員限定 +165円（税込）/月<br />
                     gyoza.orgのメールボックスをご利用頂けます<br />
-                    （<a href="https://rs.sakura.ad.jp/mail/" target="_blank" class="underline decoration-dotted underline-offset-4">さくらのメールボックス</a>での提供となります）
+                    （<a href="https://rs.sakura.ad.jp/mail/" target="_blank" class="link">さくらのメールボックス</a>での提供となります）
                   </p>
                 </th>
                 <td>
@@ -274,7 +274,6 @@ const yyyymmdd = (datetime?: string) => {
       </ul>
     </section>
 
-    <Footer class="mt-20 footer p-10 bg-base-200 text-base-content"></Footer>
   </article>
 </template>
 

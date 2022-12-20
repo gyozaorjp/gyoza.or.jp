@@ -92,7 +92,7 @@
         <dd>
           <ul>
             <li>逸品ぎょうざ頒布会でお送りする食品についてはお客様都合による返品は承ることができません。不良品についてはメールまたは電話にてご連絡ください</li>
-            <li>メールボックスの不具合は「<a href="https://rs.sakura.ad.jp/mail/" target="_blank" class="underline decoration-dotted underline-offset-4">さくらのメールボックス</a>」のサポートに準拠します</li>
+            <li>メールボックスの不具合は「<a href="https://rs.sakura.ad.jp/mail/" target="_blank" class="link">さくらのメールボックス</a>」のサポートに準拠します</li>
           </ul>
         </dd>
 
@@ -120,7 +120,6 @@
 
     </section>
 
-    <Footer class="mt-20 footer p-10 bg-base-200 text-base-content"></Footer>
   </article>
 </template>
 
