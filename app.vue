@@ -32,7 +32,9 @@ useHead({
           <NuxtPage/>
         </NuxtLayout>
 
-        <Footer class="mt-20 footer p-10 bg-base-200 text-base-content"></Footer>
+        <div class="mt-20 bg-white">
+          <Footer class="footer container mx-auto"></Footer>
+        </div>
 
       </div> 
       <aside class="drawer-side">
@@ -48,13 +50,6 @@ useHead({
             <NuxtLink to="/entry/">
               入会案内
             </NuxtLink>
-          </li>
-          <li>
-            <a
-              href="https://share.hsforms.com/1gPwfyg1lRKePmkYJrluR2gd8bov"
-              target="_blank">
-              お問い合わせ
-            </a>
           </li>
 
           <li>
@@ -79,6 +74,14 @@ useHead({
             <NuxtLink to="/transactionlaw/">
               特定商取引法に基づく表示
             </NuxtLink>
+          </li>
+
+          <li>
+            <a
+              href="https://share.hsforms.com/1gPwfyg1lRKePmkYJrluR2gd8bov"
+              target="_blank">
+              お問い合わせ
+            </a>
           </li>
 
         </ul>

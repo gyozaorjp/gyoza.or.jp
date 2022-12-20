@@ -1,11 +1,8 @@
+<script setup lang="ts">
+</script>
+
 <template>
-  <footer>
-    <div>
-      <NuxtLink to="/"><img src="/img/common/symbol.png" alt="" class="w-16" /></NuxtLink>
-      <p>一般社団法人焼き餃子協会</p>
-      <p>〒140-0004 東京都品川区<br />南品川二丁目９番２５号<br />扇田ビル３０８号室</p>
-      <p>TEL 03-4446-6137</p>
-    </div> 
+  <footer class="p-4">
     <div>
       <span class="footer-title">協会概要</span> 
       <NuxtLink class="link link-hover" to="/about/">焼き餃子協会について</NuxtLink> 
