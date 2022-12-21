@@ -22,14 +22,29 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: {
         'data-theme': 'gyoza',
-        'lang': 'ja',
-        'class': 'scroll-smooth',
+        lang: 'ja',
+        class: 'scroll-smooth',
       },
-    }
+      charset: 'utf-8',
+      title: '一般社団法人 焼き餃子協会',
+      titleTemplate: '%s - 一般社団法人焼き餃子協会',
+      meta: [
+        { name: 'format-detection', content: 'telephone=no' },
+        { property: 'og:site_name', content: '一般社団法人焼き餃子協会' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://www.gyoza.or.jp' },
+        { property: 'og:title', content: '一般社団法人焼き餃子協会' },
+        { property: 'og:image', content: 'https://www.gyoza.or.jp/ogp.png' },
+        { property: 'fb:app_id', content: '1917857498322261' },
+      ],
+    },
   },
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
   ],
+  content: {
+    documentDriven: true,
+  }
 
 })

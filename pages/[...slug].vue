@@ -1,13 +1,18 @@
+<script setup lang="ts">
+const { page } = useContent()
+useHead({
+  title: page.title,
+})
+</script>
+
 <template>
   <article class="pt-12">
-    <ContentDoc v-slot="{ doc }">
       <header class="hero relative w-full text-white py-20" style="background-image: url(/img/common/visual-main_bg@pc.png)">
-        <h1 class="py-20 text-2xl sm:text-3xl">{{ doc.title }}</h1>
+        <h1 class="py-20 text-2xl sm:text-3xl">{{ page.title }}</h1>
       </header>
       <section class="container max-w-xl mx-auto p-4">
-        <ContentRenderer :value="doc" />
+        <ContentDoc :value="page" />
       </section>
-    </ContentDoc>
   </article>
 </template>
 
