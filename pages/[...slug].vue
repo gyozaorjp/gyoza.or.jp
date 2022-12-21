@@ -1,7 +1,12 @@
 <script setup lang="ts">
 const { page } = useContent()
+const route = useRoute()
+
 useHead({
   title: page.title,
+  meta: [
+    { property: 'og:title', content: page.title },
+  ],
 })
 </script>
 

@@ -31,7 +31,7 @@ export default defineNuxtConfig({
       meta: [
         { name: 'format-detection', content: 'telephone=no' },
         { property: 'og:site_name', content: '一般社団法人焼き餃子協会' },
-        { property: 'og:type', content: 'website' },
+        { property: 'og:type', content: 'article' },
         { property: 'og:url', content: 'https://www.gyoza.or.jp' },
         { property: 'og:title', content: '一般社団法人焼き餃子協会' },
         { property: 'og:image', content: 'https://www.gyoza.or.jp/ogp.png' },

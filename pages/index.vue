@@ -9,7 +9,10 @@ const yyyymmdd = (datetime?: string) => {
 }
 
 useHead({
-  titleTemplate: config.public.title
+  titleTemplate: config.public.title,
+  meta: [
+    { property: 'og:type', content: 'website' },
+  ],
 })
 
 </script>

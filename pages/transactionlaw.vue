@@ -2,6 +2,9 @@
 const title = ref('特定商取引法に基づく表示')
 useHead({
   title,
+  meta: [
+    { property: 'og:title', content: title },
+  ],
 })
 </script>
 

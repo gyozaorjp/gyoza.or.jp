@@ -2,6 +2,9 @@
 const title = ref('焼き餃子協会について')
 useHead({
   title,
+  meta: [
+    { property: 'og:title', content: title },
+  ],
 })
 </script>
 
