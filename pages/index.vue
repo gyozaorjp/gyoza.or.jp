@@ -58,7 +58,7 @@ useHead({
           <p class="mt-1 text-md">
             {{ post.name }}
           </p>
-          <a :href="`https://note.com/ch1cala/n/${post.key}?magazine_key=m6c8cc8ac407b`"
+          <a :href="`https://note.com/${post.user.urlname}/n/${post.key}?magazine_key=m6c8cc8ac407b`"
             target="_blank"
             class="absolute inset-0"></a>
         </li>
