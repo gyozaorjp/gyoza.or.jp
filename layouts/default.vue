@@ -73,6 +73,12 @@ const toggle = () => {
           </li>
 
           <li>
+            <NuxtLink to="/supermarket/" @click="toggle">
+              餃子フェス&reg;展開店舗
+            </NuxtLink>
+          </li>
+
+          <li>
             <a
               href="https://share.hsforms.com/1gPwfyg1lRKePmkYJrluR2gd8bov"
               target="_blank">
