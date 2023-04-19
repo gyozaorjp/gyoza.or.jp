@@ -68,6 +68,9 @@ useHead({
               <li><a href="https://www.mv-kanto.co.jp/stores/75/" target="_blank">マックスバリュ おゆみ野店</a></li>
               <li><a href="https://www.mv-kanto.co.jp/stores/189/" target="_blank">マックスバリュ 木更津請西店</a></li>
               <li><a href="https://www.mv-kanto.co.jp/stores/610/" target="_blank">マックスバリュエクスプレス 幕張店</a></li>
+              <li><a href="https://www.mv-kanto.co.jp/stores/186/" target="_blank">マックスバリュ 木更津太田店</a></li>
+              <li><a href="https://www.maruetsu.co.jp/store/9183/" target="_blank">マルエツ 北柏店</a></li>
+              <li><a href="https://www.maruetsu.co.jp/store/9086/" target="_blank">マルエツ 鎌ヶ谷大仏店</a></li>
             </ul>
           </dd>
           <dt>東京都</dt>
@@ -85,6 +88,7 @@ useHead({
               <li><a href="https://www.maruetsu.co.jp/store/9437/" target="_blank">マルエツ 長津田駅前店</a></li>
               <li><a href="https://www.maruetsu.co.jp/store/9136/" target="_blank">マルエツ 井土ヶ谷店</a></li>
               <li><a href="https://www.maruetsu.co.jp/store/9248/" target="_blank">マルエツ 瀬谷店</a></li>
+              <li><a href="https://www.maruetsu.co.jp/store/9128/" target="_blank">マルエツ 大倉山店</a></li>
             </ul>
           </dd>
         </dl>
@@ -111,6 +115,26 @@ useHead({
               <li><a href="http://www.hatosen.jp/shop/osaka/osaka/74" target="_blank">フレンドマート 深江橋店</a></li>
             </ul>
           </dd>
+          <!--
+          <dt>京都府</dt>
+          <dd>
+            <ul>
+              <li><a href="http://www.hatosen.jp/shop/kyoto/nagaokakyo/63" target="_blank">フレンドマート 長岡京店</a></li>
+            </ul>
+          </dd>
+          <dt>石川県</dt>
+          <dd>
+            <ul>
+              <li><a href="http://alp-k.ciao.jp/" target="_blank">アル・プラザ金沢</a></li>
+            </ul>
+          </dd>
+          <dt>兵庫県</dt>
+          <dd>
+            <ul>
+              <li><a href="https://www.tsukashin.com/" target="_blank">アル・プラザつかしん</a></li>
+            </ul>
+          </dd>
+          -->
         </dl>
       </section>
 
