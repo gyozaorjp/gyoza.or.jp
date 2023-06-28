@@ -2,7 +2,7 @@
 import dayjs from 'dayjs'
 
 const config = useRuntimeConfig()
-const {data:posts} = await useFetch(config.NOTE_API)
+const {data:posts} = await useFetch(config.public.NOTE_API)
 
 const yyyymmdd = (datetime?: string) => {
   return datetime ? dayjs(datetime).format('YYYY/MM/DD') : null

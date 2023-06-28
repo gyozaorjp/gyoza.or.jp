@@ -115,7 +115,6 @@ useHead({
               <li><a href="http://www.hatosen.jp/shop/osaka/osaka/74" target="_blank">フレンドマート 深江橋店</a></li>
             </ul>
           </dd>
-          <!--
           <dt>京都府</dt>
           <dd>
             <ul>
@@ -134,7 +133,6 @@ useHead({
               <li><a href="https://www.tsukashin.com/" target="_blank">アル・プラザつかしん</a></li>
             </ul>
           </dd>
-          -->
         </dl>
       </section>
 

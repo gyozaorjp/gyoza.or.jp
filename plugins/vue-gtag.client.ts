@@ -4,7 +4,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   const config = useRuntimeConfig()
   nuxtApp.vueApp.use(VueGtag, {
     property: {
-      id: config.gtm.id
+      id: config.public.gtm.id
     }
   })
 })
