@@ -140,15 +140,6 @@ useHead({
               </td>
             </tr>
             <tr>
-              <th>事務局</th>
-              <td>
-                <p>
-                  <a href="https://qurumu.jp/" target="_blank">Qurumu合同会社</a>
-                </p>
-                <p>〒880-0805 宮崎県宮崎市橘通東3-5-33 鈴木ビル</p>
-              </td>
-            </tr>
-            <tr>
               <th>Mail</th>
               <td>miyazaki@gyoza.or.jp</td>
             </tr>
