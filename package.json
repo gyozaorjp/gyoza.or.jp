@@ -15,7 +15,7 @@
     "nuxt": "^3.6.1"
   },
   "dependencies": {
-    "dayjs": "^1.11.6",
+    "dayjs": "^1.11.9",
     "vue-gtag-next": "^1.14.0"
   }
 }
