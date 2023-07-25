@@ -1,5 +1,4 @@
 export const onRequest = async ({request, params}) => {
-  const magazineId = params.id
   const url = 'https://note.com/yaki_gyoza/m/m6c8cc8ac407b/rss'
 
   try {

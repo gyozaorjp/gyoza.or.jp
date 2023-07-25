@@ -44,30 +44,17 @@ useHead({
     <section class="container mx-auto mt-16 p-4 flex flex-col items-center">
       <header class="flex justify-center items-center gap-4">
         <img src="/img/common/ic_h_news_01.png" class="h-24 sm:h-36" alt="" />
-        <h1 class="text-xl sm:text-5xl">お知らせ</h1>
+        <h1 class="text-xl sm:text-5xl">焼き餃子協会 会報</h1>
         <img src="/img/common/ic_h_news_02.png" class="h-24 sm:h-36" alt="" />
       </header>
-      <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <li class="note relative flex flex-col sm:p-0" v-for="post in posts.data.section.contents" :key="post.id">
-          <div class="overflow-hidden w-full">
-            <img :src="post.eyecatch" alt="" />
-          </div>
-          <p class="mt-2 text-xs">
-            {{ yyyymmdd(post.publish_at) }}
-          </p>
-          <p class="mt-1 text-md">
-            {{ post.name }}
-          </p>
-          <a :href="`https://note.com/${post.user.urlname}/n/${post.key}?magazine_key=m6c8cc8ac407b`"
-            target="_blank"
-            class="absolute inset-0"></a>
-        </li>
-      </ul>
+      <ClientOnly>
+        <Posts :url="'https://gyoza.or.jp/api/note'" />
+      </ClientOnly>
       <p class="mt-4">
         <a
           href="https://note.com/yaki_gyoza/m/m6c8cc8ac407b"
           target="_blank"
-          class="btn btn-outline btn-wide">お知らせを全て見る</a>
+          class="btn btn-outline btn-wide">焼き餃子協会 会報一覧</a>
       </p>
     </section>
 
