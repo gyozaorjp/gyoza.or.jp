@@ -42,9 +42,17 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
+    'nuxt3-meta-pixel',
   ],
   content: {
     documentDriven: true,
-  }
+  },
+  facebook: {
+    /* module options */
+    track: 'PageView',
+    pixelId: process.env.META_PIXEL,
+    autoPageView: true,
+    disabled: false
+  },
 
 })
