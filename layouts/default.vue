@@ -1,4 +1,12 @@
 <script setup lang="ts">
+const route = useRoute()
+
+useHead({
+  meta: [
+    { property: 'og:url', content: 'https://www.gyoza.or.jp' + route.path },
+  ],
+})
+
 const drawer = ref(false)
 const toggle = () => {
   drawer.value = false

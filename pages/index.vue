@@ -18,6 +18,7 @@ useHead({
 </script>
 
 <template>
+  <NuxtLayout>
   <article>
     <header class="hero relative h-screen w-screen" style="background-image: url(/img/top/visual-top_img@pc.jpg)">
       <div
@@ -270,6 +271,7 @@ useHead({
     </section>
 
   </article>
+  </NuxtLayout>
 </template>
 
 <style scoped lang="postcss">

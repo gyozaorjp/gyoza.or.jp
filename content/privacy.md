@@ -53,4 +53,4 @@ HubSpot社について追加のプライバシーポリシーにつきまして�
 
 電話番号： 03-4446-6137
 
-[一般社団法人焼き餃子協会 お問い合わせフォーム](/contact/)
+[一般社団法人焼き餃子協会 お問い合わせフォーム](https://share.hsforms.com/1gPwfyg1lRKePmkYJrluR2gd8bov)
