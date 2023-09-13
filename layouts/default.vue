@@ -87,6 +87,12 @@ const toggle = () => {
           </li>
 
           <li>
+            <NuxtLink to="/how/" @click="toggle">
+              小野寺力式 餃子の焼き方
+            </NuxtLink>
+          </li>
+
+          <li>
             <a
               href="https://share.hsforms.com/1gPwfyg1lRKePmkYJrluR2gd8bov"
               target="_blank">
