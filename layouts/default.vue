@@ -57,7 +57,7 @@ const toggle = () => {
           </li>
 
           <li>
-            <a @click="toggle">会員規約</a>
+            <NuxtLink to="/membership/" @click="toggle">会員規約</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/antisocialist/" @click="toggle">
