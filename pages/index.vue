@@ -154,11 +154,12 @@ useHead({
                 <th>
                   <p>逸品ぎょうざ頒布会の参加権</p>
                   <p class="desc">
-                    会員限定 +3,960円（税込）/月<br />
+                    会員限定 +3,960円/月<br />
                     全国の逸品餃子を工場から毎月直送します
                   </p>
                 </th>
                 <td>
+                  <img src="/img/common/ic_check.png" alt="◯" class="mx-auto" />
                 </td>
                 <td>
                   <img src="/img/common/ic_check.png" alt="◯" class="mx-auto" />
