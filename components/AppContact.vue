@@ -17,6 +17,6 @@
 
 <style lang="postcss" scoped>
 .background {
-  @apply bg-[url('/img/top/contact_bg@pc.jpg')] bg-fixed bg-cover bg-center bg-no-repeat;
+  @apply bg-[url('/img/top/contact_bg@pc.jpg')] bg-cover bg-center bg-no-repeat;
 }
 </style>

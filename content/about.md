@@ -1,6 +1,7 @@
 ---
 title: "焼き餃子協会について"
 description: "日本の焼き餃子文化を世界へ広めることをミッションとして活動する焼き餃子協会の概要です。"
+contact: 1
 ---
 ::Background{bgcolor="bg-slate-50"}
 

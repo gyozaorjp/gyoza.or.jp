@@ -1,6 +1,7 @@
 ---
 title: 焼き餃子協会セレクト餃子 展開店舗
 description: "焼き餃子協会でセレクトした旬・話題の餃子を並べていただいている店舗を掲載しています。"
+contact: 1
 ---
 ::Background{bgcolor="bg-slate-50"}
 
@@ -11,6 +12,11 @@ description: "焼き餃子協会でセレクトした旬・話題の餃子を並
   ::Note
   ※店舗ごとにラインナップの違いがあり、また不定期に商品の入れ替えが行われています。
   ::
+::
+
+::Buyer
+バイヤーの皆様  
+[お店にあった逸品餃子のセレクトをご相談承ります](#contact)
 ::
 
 ## 茨城県
@@ -58,7 +64,3 @@ description: "焼き餃子協会でセレクトした旬・話題の餃子を並
 
 - [餃子神殿 知多店](https://www.instagram.com/jowin_b_/)
 - [餃子神殿 長久手店](https://www.instagram.com/gyozasinden_nagakute/)
-
-::Contact
-貴店にあった逸品餃子のセレクトをご相談承ります
-::

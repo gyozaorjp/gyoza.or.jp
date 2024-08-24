@@ -13,7 +13,10 @@ const { data:magazine } = await useFetch('/api/note')
     </HeaderAun>
 
     <section v-if="magazine" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 px-4">
-      <MagazineArticle v-for="article in magazine.data.section.contents" :article="article"></MagazineArticle>
+      <MagazineArticle
+        v-for="article in magazine.data.section.contents"
+        :article="article"
+        :magazineId="magazineId"></MagazineArticle>
     </section>
     <div v-else class="flex justify-center">
       <p class="text-center p-4">Loading...</p>

@@ -1,14 +1,18 @@
 <script setup lang="ts">
 import { useElementVisibility, useElementHover } from '@vueuse/core'
 const target = ref(null)
-const isVisible = useElementVisibility(target)
-const isHovered = useElementHover(target)
+const isVisible:boolean = useElementVisibility(target)
+const isHovered:boolean = useElementHover(target)
 
 const props = defineProps({
   article: {
     type: Object,
     required: true,
   },
+  magazineId: {
+    type: String,
+    required: true,
+  }
 })
 
 </script>

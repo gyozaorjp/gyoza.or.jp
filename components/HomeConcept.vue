@@ -25,9 +25,3 @@
     </div>
   </section>
 </template>
-
-<style lang="postcss" scoped>
-.background {
-  @apply bg-[url('/img/top/about_bg@pc.jpg')] bg-cover bg-center bg-fixed;
-}
-</style>

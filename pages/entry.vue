@@ -1,6 +1,5 @@
 <script setup lang="ts">
-const route = useRoute()
-const key = route.params.slug
+const key = 'entry'
 const { data } = await useAsyncData(key, () => queryContent(key).findOne())
 </script>
 
@@ -10,5 +9,7 @@ const { data } = await useAsyncData(key, () => queryContent(key).findOne())
       <ContentRendererMarkdown :value="data" class="contents" />
     </NuxtLayout>
   </ContentRenderer>
-  <AppContact id="contact" v-if="data.contact"></AppContact>
+
+  <HomeEntry></HomeEntry>
+  <AppContact v-if="data.contact"></AppContact>
 </template>
