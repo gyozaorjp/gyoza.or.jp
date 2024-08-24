@@ -5,39 +5,18 @@ export default <Partial<Config>>{
     fontFamily: {
       'sans':  [
         'Noto Sans JP',
-        'sans-serif'
+        'sans-serif',
       ],
       'serif': [
         'Noto Serif JP',
-        'serif'
+        'serif',
       ],
       'mono': [
         'Noto Sans Mono',
-        'monospace'
+        'monospace',
       ],
-    },
+    }
   },
-  plugins: [
-    // https://tailwindcss.com/docs/typography-plugin
-    require("@tailwindcss/typography"),
-    // https://daisyui.com/docs
-    require("daisyui"),
-  ],
-  daisyui: {
-    themes: [
-      {
-        gyoza: {
-          "primary": "#671800",
-          "secondary": "#D75050",
-          "accent": "#D59B6C",
-          "neutral": "#ffffff",
-          "base-100": "#e5d3b8",
-          "info": "#42AEBD",
-          "success": "#489380",
-          "warning": "#EB8014",
-          "error": "#E01A2E",
-        },
-      },
-    ],
-  },  
+  content: [],
+  plugins: [],
 }
