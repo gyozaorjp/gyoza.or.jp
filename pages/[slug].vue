@@ -13,5 +13,7 @@ const { data } = await useAsyncData(key, () => queryContent(key).findOne())
 
   <HomeEntry v-if="key==='entry'"></HomeEntry>
 
+  <AppShare class="mt-8" :title="data.title"></AppShare>
+
   <LazyAppContact id="contact" v-if="data.contact"></LazyAppContact>
 </template>
