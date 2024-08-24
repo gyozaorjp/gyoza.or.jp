@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  ssr: false,
+  ssr: true,
 
   runtimeConfig: {
     public: {
@@ -93,5 +93,21 @@ export default defineNuxtConfig({
     autoPageView: true,
     disabled: false
   },
-  
+
+  nitro: {
+    prerender: {
+      crawlLinks: false,
+      routes: [
+        '/about',
+        '/antisocialist',
+        '/entry',
+        '/how',
+        '/membership',
+        '/privacy',
+        '/statute',
+        '/supermarket',
+        '/transactionlaw',
+      ],
+    }
+  },
 })

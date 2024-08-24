@@ -1,5 +1,6 @@
 ---
 title: 賛助会員ご入会のご案内
+description: "焼き餃子協会への入会に伴う規定を掲載します"
 contact: 1
 related:
     - HomeEntry

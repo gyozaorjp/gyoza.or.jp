@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const route = useRoute()
-const key = route.params.slug
+const key = route.path
 const { data } = await useAsyncData(key, () => queryContent(key).findOne())
 </script>
 
@@ -11,7 +11,7 @@ const { data } = await useAsyncData(key, () => queryContent(key).findOne())
     </NuxtLayout>
   </ContentRenderer>
 
-  <HomeEntry v-if="key==='entry'"></HomeEntry>
+  <HomeEntry v-if="key==='/entry'"></HomeEntry>
 
   <AppShare class="mt-8" :title="data.title"></AppShare>
 
