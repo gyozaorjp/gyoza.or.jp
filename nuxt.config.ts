@@ -19,6 +19,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
     'dayjs-nuxt',
+    'nuxt-gtag',
     'nuxt3-meta-pixel',
   ],
 
@@ -78,6 +79,11 @@ export default defineNuxtConfig({
     plugins: ['relativeTime', 'utc', 'timezone'],
     defaultLocale: 'ja',
     defaultTimezone: 'Asia/Tokyo',
+  },
+  
+  // https://nuxt.com/modules/gtag
+  gtag: {
+    id: process.env.GOOGLE_TAG_MANAGER_ID,
   },
   
   // https://nuxt.com/modules/nuxt-meta-pixel
