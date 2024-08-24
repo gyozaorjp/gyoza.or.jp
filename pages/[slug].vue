@@ -10,5 +10,8 @@ const { data } = await useAsyncData(key, () => queryContent(key).findOne())
       <ContentRendererMarkdown :value="data" class="contents" />
     </NuxtLayout>
   </ContentRenderer>
-  <AppContact id="contact" v-if="data.contact"></AppContact>
+
+  <HomeEntry v-if="key==='entry'"></HomeEntry>
+
+  <LazyAppContact id="contact" v-if="data.contact"></LazyAppContact>
 </template>
