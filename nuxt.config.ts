@@ -103,6 +103,7 @@ export default defineNuxtConfig({
         '/entry',
         '/how',
         '/membership',
+        '/podcast',
         '/privacy',
         '/statute',
         '/supermarket',

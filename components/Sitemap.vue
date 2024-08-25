@@ -24,6 +24,9 @@
           <NuxtLink to="/how">小野寺式 餃子の焼き方</NuxtLink>
         </li>
         <li>
+          <NuxtLink to="/podcast">Podcast 聴く餃子</NuxtLink>
+        </li>
+        <li>
           <a href="https://shop.gyoza.or.jp/" target="_blank">焼き餃子協会 公式グッズ販売</a>
         </li>
         <li>
