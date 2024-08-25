@@ -11,7 +11,7 @@ const copyurl = () => {
 
 <template>
   <PageHeader>Podcast 聴く餃子</PageHeader>
-  <main class="container max-w-4xl mx-auto p-4 flex flex-col items-center gap-y-8 overflow-x-hidden">
+  <main class="container max-w-4xl mx-auto px-4 py-12 flex flex-col items-center gap-y-8">
     <header class="bg-white p-4 rounded-xl border border-solid ">
       <p>「聴く餃子」は、焼き餃子文化への愛を語る番組です。日本で進化した焼き餃子文化の魅力を、焼き餃子協会 代表理事・ぎょうざジョッキーの小野寺力が毎週火曜日にお送りしています。</p>
     </header>
@@ -77,6 +77,16 @@ const copyurl = () => {
         <p v-if="copied" class="font-thin text-sm">RSSをコピーしました</p>
         <p v-else class="font-thin text-sm">RSSをコピー</p>
       </div>
+    </section>
+
+    <section class="mt-8 flex flex-col items-center gap-y-4">
+      <a
+        href="https://share.hsforms.com/1V7NJeZIURC-lq57fOzFy5Qd8bov"
+        target="_blank"
+        class="w-full max-w-5xl p-4 rounded-2xl sm:text-3xl text-center font-bold no-underline border border-solid border-orange-800 bg-gradient-to-r from-orange-100 to-orange-50 transition duration-500 opacity-80 hover:opacity-100 shadow hover:shadow-xl">
+        聴く餃子 ご感想・ご意見フォーム
+      </a>
+      <p class="text-sm">ご感想、ご意見、ご要望などいただけると、大変励みになります！</p>
     </section>
   </main>
   <AppShare class="mt-8"></AppShare>
