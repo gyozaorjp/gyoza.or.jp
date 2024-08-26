@@ -1,17 +1,24 @@
 <script setup lang="ts">
-useHead({
-  script: [
-    {src: '//js.hsforms.net/forms/embed/v2.js'},
-  ],
+const props = defineProps({
+  formId: {
+    type: String,
+    required: true,
+  },
 })
 
 onMounted(() => {
-  hbspt.forms.create({
-    region: "na1",
-    portalId: "22223407",
-    formId: "28fd65cf-368d-41c4-b964-e8490da2cf7c",
-    target: '#hubspotForm',
-  });
+  const script = document.createElement("script");
+  script.src="https://js.hsforms.net/forms/v2.js";
+  document.body.appendChild(script);
+
+  script.addEventListener("load", () => {
+    hbspt.forms.create({
+      region: "na1",
+      portalId: "22223407",
+      formId: props.formId,
+      target: '#hubspotForm',
+    });
+  })
 })
 </script>
 

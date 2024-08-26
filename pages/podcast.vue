@@ -97,8 +97,7 @@ useHead({
       </div>
     </section>
 
-    <HubspotForm
-    class="mt-8 bg-slate-50 rounded-3xl"></HubspotForm>
+    <HubspotForm :formId="'28fd65cf-368d-41c4-b964-e8490da2cf7c'" class="mt-8 bg-slate-50 rounded-3xl"></HubspotForm>
   </main>
   <AppShare class="mt-8"></AppShare>
 </template>
