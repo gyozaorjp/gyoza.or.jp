@@ -47,9 +47,7 @@ const menuExpand = ref(false)
     </nav>
   </header>
   <article class="pt-16">
-    <NuxtLayout>
       <NuxtPage />
-    </NuxtLayout>
   </article>
   <AppFooter></AppFooter>
 </template>

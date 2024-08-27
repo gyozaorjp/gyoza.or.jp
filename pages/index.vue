@@ -1,9 +1,3 @@
-<script setup lang="ts">
-definePageMeta({
-  layout: 'home'
-})
-</script>
-
 <template>
   <main>
     <HomeVisual></HomeVisual>
@@ -14,6 +8,3 @@ definePageMeta({
     <AppContact></AppContact>
   </main>
 </template>
-
-<style lang="postcss" scoped>
-</style>
