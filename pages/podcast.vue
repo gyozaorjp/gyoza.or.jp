@@ -10,7 +10,8 @@ const copyurl = () => {
 
 useSeoMeta({
   title: 'Podcast 聴く餃子',
-  ogImage: runtimeConfig.public.SITE_URL + '/podcats/ogp.png'
+  ogImage: runtimeConfig.public.SITE_URL + '/podcats/ogp.png',
+  twitterImage: runtimeConfig.public.SITE_URL + '/podcats/ogp.png',
 })
 
 useHead({
