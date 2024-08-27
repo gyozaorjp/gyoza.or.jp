@@ -32,7 +32,8 @@ const props = defineProps({
     <a
       :href="`https://note.com/${article.user.urlname}/n/${article.key}?magazine_key=${magazineId}`"
       target="_blank"
-      class="absolute inset-0"></a>
+      class="absolute inset-0"
+      :aria-label="article.name"></a>
   </article>
 </template>
 

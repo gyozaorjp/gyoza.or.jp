@@ -96,19 +96,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      crawlLinks: false,
-      routes: [
-        '/about',
-        '/antisocialist',
-        '/entry',
-        '/how',
-        '/membership',
-        '/podcast',
-        '/privacy',
-        '/statute',
-        '/supermarket',
-        '/transactionlaw',
-      ],
+      crawlLinks: true,
     }
   },
 })

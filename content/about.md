@@ -35,27 +35,27 @@ contact: 1
 | 監事 | 勝又 喜久男（株式会社ふじのくに 代表取締役 / 行政書士） |
 | Mail | `info@gyoza.or.jp` |
 | 電話番号 | 03-4446-6137 |
-| 事務局 | [しかけ株式会社](https://www.shikake.com/)<br />〒150-0021<br />東京都 渋谷区 恵比寿西1-33-6<br />JP noie 恵比寿西1F co-ba ebisu |
+| 事務局 | [しかけ株式会社](https://www.shikake.com/ "しかけ株式会社")<br />〒150-0021<br />東京都 渋谷区 恵比寿西1-33-6<br />JP noie 恵比寿西1F co-ba ebisu |
 
 ## 支部
 
 | 宮崎支部 ||
 |-|-|
-| 支部長 | [恒吉浩之](https://x.com/nakahi) |
+| 支部長 | [恒吉浩之](https://x.com/nakahi "恒吉浩之 X") |
 | 事務局 | 〒889-2162 宮崎県宮崎市青島6-10-5 |
 | Mail | `miyazaki@gyoza.or.jp` |
 
 | 鹿児島支部 ||
 |-|-|
-| 支部長 | [カタオカマナミ](https://note.com/gyoza_journey) |
-| 事務局 | [株式会社ビッグファイブ](https://www.bigfive-shop.com/)<br />〒891-0115 鹿児島県鹿児島市東開町4-74 |
+| 支部長 | [カタオカマナミ](https://note.com/gyoza_journey "カタオカマナミ note") |
+| 事務局 | [株式会社ビッグファイブ](https://www.bigfive-shop.com/ "株式会社ビッグファイブ")<br />〒891-0115 鹿児島県鹿児島市東開町4-74 |
 | Mail | `kagoshima@gyoza.or.jp` |
 
 ## 諸規定
 
-- [定款](statute)
-- [会員規約](membership)
-- [反社会的勢力に対する基本方針](antisocialist)
-- [プライバシーポリシー](privacy)
-- [特定商取引法に基づく表示](transactionlaw)
+- [定款](statute "定款")
+- [会員規約](membership "会員規約")
+- [反社会的勢力に対する基本方針](antisocialist "反社会的勢力に対する基本方針")
+- [プライバシーポリシー](privacy "プライバシーポリシー")
+- [特定商取引法に基づく表示](transactionlaw "特定商取引法に基づく表示")
 

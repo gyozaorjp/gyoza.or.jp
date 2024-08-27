@@ -69,21 +69,24 @@ useHead({
         <a
           href="https://music.youtube.com/playlist?list=PLy65Z8NNuSvibQmyfHpNoni1vL_hU9avj"
           target="_blank"
-          class="platformLogo">
+          class="platformLogo"
+          aria-label="Youtube Music">
           <img src="/podcast/YoutubeMusic.png" alt="Youtube Music" class="logo" />
         </a>
 
         <a
           href="https://music.amazon.co.jp/podcasts/31e4ebdd-538b-4146-9294-aa82b05e05f6/"
           target="_blank"
-          class="platformLogo">
+          class="platformLogo"
+          aria-label="Amazon Music">
           <img src="/podcast/AmazonMusic.png" alt="Amazon Music" class="logo" />
         </a>
 
         <a
           href="https://listen.style/p/gyoza"
           target="_blank"
-          class="platformLogo">
+          class="platformLogo"
+          aria-label="LISTEN">
           <img src="/podcast/Listen.png" alt="LISTEN" class="logo" />
         </a>
 

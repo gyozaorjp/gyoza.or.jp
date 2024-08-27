@@ -19,7 +19,7 @@ const props = defineProps({
   <figure class="w-full">
     <div class="relative">
       <img :src="src" :alt="alt" class="w-full" />
-      <a href="/how/onodera2023.pdf" download target="_blank" class="absolute inset-0"></a>
+      <a href="/how/onodera2023.pdf" download target="_blank" class="absolute inset-0" aria-label="Download PDF"></a>
     </div>
     <figcaption class="py-2">
       <slot />

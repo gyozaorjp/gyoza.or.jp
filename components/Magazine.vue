@@ -1,6 +1,25 @@
 <script setup lang="ts">
+interface Note {
+  key: string,
+  eyecatch: string,
+  publish_at: string,
+  name: string,
+  user: {
+    name: string,
+    urlname: string,
+  }
+}
+
+interface Magazine {
+  data: {
+    section: {
+      contents: Note[],
+    };
+  };
+}
+
 const magazineId = ref('m6c8cc8ac407b')
-const { data:magazine } = await useFetch('/api/note')
+const { data:magazine } = await useFetch<Magazine>('/api/note')
 </script>
 
 <template>
