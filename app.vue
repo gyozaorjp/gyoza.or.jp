@@ -22,7 +22,9 @@ useSeoMeta({
 <template>
   <AppHeader class="fixed"></AppHeader>
   <article class="pt-16">
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </article>
   <AppFooter></AppFooter>
 </template>

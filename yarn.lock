@@ -681,6 +681,20 @@
   resolved "https://registry.yarnpkg.com/@fastify/busboy/-/busboy-2.1.1.tgz#b9da6a878a371829a0502c9b6c1c143ef6663f4d"
   integrity sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==
 
+"@iconify-json/bi@^1.1.24":
+  version "1.1.24"
+  resolved "https://registry.yarnpkg.com/@iconify-json/bi/-/bi-1.1.24.tgz#de092556d3c32f64051ec65d0ffa7ec134f3c898"
+  integrity sha512-K8U7s6Hm0Y06q9z41AGLLe+zuwZ7t8LNLG0EUkzZMvUMoZwZosmzFWlp2ajit1MGX+ealu4IKkMioKgjVNQ5ZQ==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/prime@^1.1.13":
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/@iconify-json/prime/-/prime-1.1.13.tgz#7b59341d7f24815013195bc573cbbb78ab20d77e"
+  integrity sha512-mIwwcjD2a3tiS92L3tA9NrQcYT8sCfUP8atHxU3+1xetwSLMKt+Go+waVduLJtxMdHtlPVwpyil5qIXApof1Ww==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify/collections@^1.0.443":
   version "1.0.449"
   resolved "https://registry.yarnpkg.com/@iconify/collections/-/collections-1.0.449.tgz#487adfcf71e125d7b48c2f4748a4046083b93044"

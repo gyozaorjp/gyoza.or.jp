@@ -1,4 +1,6 @@
 <script setup lang="ts">
+definePageMeta({ layout: false })
+
 import { useClipboard } from '@vueuse/core'
 const runtimeConfig = useRuntimeConfig();
 
