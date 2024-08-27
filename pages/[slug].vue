@@ -2,6 +2,13 @@
 const route = useRoute()
 const key = route.path
 const { data } = await useAsyncData(key, () => queryContent(key).findOne())
+
+if (!data.value) {
+  throw showError({
+    statusCode: 404,
+    statusMessage: 'Page Not Found'
+  })
+}
 </script>
 
 <template>
