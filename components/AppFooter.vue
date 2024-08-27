@@ -1,6 +1,6 @@
 <template>
   <footer class="w-full bg-slate-50 p-4">
-    <NuxtLink to="/">
+    <NuxtLink to="/" aria-label="焼き餃子協会 Home">
       <img
         src="/img/common/title.png"
         alt="一般社団法人焼き餃子協会"

@@ -25,7 +25,7 @@ const menuExpand = ref(false)
   <header class="fixed w-full z-50">
     <div class="relative bg-orange-800 shadow-xl z-10">
       <div class="relative h-16 container mx-auto px-4 flex justify-center items-center">
-        <a href="/">
+        <a href="/" aria-label="焼き餃子協会 Home">
           <img src="/img/common/logo-white.png" alt="一般社団法人焼き餃子協会" class="h-12" />
         </a>
         <button @click="menuExpand=!menuExpand" class="absolute right-4 inset-y-0">
