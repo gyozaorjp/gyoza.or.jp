@@ -8,7 +8,7 @@
       <div class="absolute inset-0 bg-orange-100/50 "></div>
     </div>
 
-    <div class="min-h-screen container mx-auto px-8 py-24 flex flex-col md:flex-row justify-center items-center gap-8">
+    <div class="-translate-y-[50vh] min-h-screen container mx-auto px-8 py-24 flex flex-col md:flex-row justify-center items-center gap-8">
       <div class="max-w-2xl bg-black/5 text-black backdrop-blur-xl flex flex-col gap-y-6  p-8">
         <h2 class="text-2xl font-serif font-black tracking-wide">一般社団法人焼き餃子協会とは</h2>
         <p class="text-lg/relaxed">
