@@ -28,9 +28,14 @@ const menuExpand = ref(false)
         <a href="/" aria-label="焼き餃子協会 Home">
           <img src="/img/common/logo-white.png" alt="一般社団法人焼き餃子協会" class="h-12" />
         </a>
-        <button @click="menuExpand=!menuExpand" class="absolute right-4 inset-y-0">
-          <Icon v-if="menuExpand" name="material-symbols:top-panel-close" class="w-8 h-8 text-white" />
-          <Icon v-else name="material-symbols:menu" class="w-8 h-8 text-white" />
+        <button @click="menuExpand=!menuExpand" class="absolute right-4 inset-y-0 cursor-pointer" :class="{open:menuExpand}">
+          <svg class="inline-block h-8 w-12 fill-slate-50" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+            <g>
+              <path class="line line-1" d="M5 13h90v14H5z"/>
+              <path class="line line-2" d="M5 43h90v14H5z"/>
+              <path class="line line-3" d="M5 73h90v14H5z"/>
+            </g>
+          </svg>
         </button>
       </div>
     </div>
@@ -49,3 +54,23 @@ const menuExpand = ref(false)
   <AppFooter></AppFooter>
 </template>
 
+<style scoped>
+.line {
+  @apply transition duration-1000 opacity-100 rotate-0 translate-x-0 translate-y-0;
+}
+.line-1 {
+  @apply origin-top-right;
+}
+.line-3 {
+  @apply origin-bottom-right;
+}
+.open .line-1 {
+  @apply -rotate-45;
+}
+.open .line-2 {
+  @apply opacity-0;
+}
+.open .line-3 {
+  @apply rotate-45;
+}
+</style>
