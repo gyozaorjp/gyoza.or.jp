@@ -101,7 +101,12 @@ useHead({
       </div>
     </section>
 
-    <HubspotForm :formId="'28fd65cf-368d-41c4-b964-e8490da2cf7c'" class="mt-8 bg-slate-50 rounded-3xl"></HubspotForm>
+    <HubspotForm :formId="'28fd65cf-368d-41c4-b964-e8490da2cf7c'" class="mt-8 bg-slate-50 rounded-3xl">
+      <template v-slot:header>
+        <h1 class="font-bold text-3xl py-2 text-center">聴く餃子 ご意見フォーム</h1>
+        <p class="text-sm text-center">ご感想、ご意見、ご要望などいただけると、大変励みになります！</p>
+      </template>
+    </HubspotForm>
   </main>
   <AppShare class="mt-8"></AppShare>
 </template>

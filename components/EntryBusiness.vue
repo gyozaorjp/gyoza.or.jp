@@ -12,12 +12,11 @@ const isVisible = useElementVisibility(target)
     <p class="text-3xl font-bold">法人賛助会員</p>
     <p class="text-xl text-center">年会費 <span class="font-mono ml-4">60,000円 / 1口</span></p>
     <p class="text-sm">※決済方法は銀行振込かクレジットカード決済</p>
-    <a
-      href="https://share.hsforms.com/1g5PzUD4iTrCT5LnOfX1LNwd8bov"
-      target="_blank"
+    <NuxtLink
+      to="/form/biz"
       class="block w-full p-4 rounded-xl bg-white text-orange-800 text-center text-xl sm:text-2xl">
       法人賛助会員 ご入会申込み
-    </a>
+    </NuxtLink>
   </article>
 </template>
 
