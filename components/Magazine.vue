@@ -23,7 +23,7 @@ const { data:magazine } = await useFetch<Magazine>('/api/note')
 </script>
 
 <template>
-  <section class="container mx-auto py-12">
+  <section class="container mx-auto">
     <HeaderAun
       :left="'/img/common/ic_h_news_01.png'"
       :right="'/img/common/ic_h_news_02.png'"
