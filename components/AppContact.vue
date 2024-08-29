@@ -5,7 +5,7 @@
     <ul class="container w-full grid lg:grid-cols-2 gap-8">
       <li class="relative w-full bg-white/70 hover:bg-orange-50 transition duration-500 border border-orange-400 p-4 shadow-lg text-center text-2xl flex items-center justify-center">
         <p>フォームでのお問い合わせ</p>
-        <a href="https://share.hsforms.com/1gPwfyg1lRKePmkYJrluR2gd8bov" target="_blank" class="absolute inset-0" aria-label="フォームでのお問い合わせ"></a>
+        <NuxtLink to="/form" class="absolute inset-0" aria-label="フォームでのお問い合わせ"></NuxtLink>
       </li>
       <li class="relative w-full bg-white/70 hover:bg-orange-50 transition duration-500 border border-orange-400 p-4 shadow-lg text-center text-2xl flex items-center justify-center">
         <p>電話でのお問い合わせ<br />TEL 03-4446-6137</p>

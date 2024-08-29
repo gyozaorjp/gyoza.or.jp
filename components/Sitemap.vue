@@ -38,7 +38,7 @@
       <p class="font-thin text-2xl py-2">Contact</p>
       <ul class="mt-2 flex flex-col gap-y-1">
         <li>
-          <a href="https://share.hsforms.com/1gPwfyg1lRKePmkYJrluR2gd8bov" target="_blank" aria-label="フォームでのお問い合わせ">フォームでのお問い合わせ</a>
+          <NuxtLink to="/form" aria-label="フォームでのお問い合わせ">フォームでのお問い合わせ</NuxtLink>
         </li>
         <li>
           <a href="tel:03-4446-6137" target="_blank" aria-label="電話でのお問い合わせ">電話でのお問い合わせ</a>

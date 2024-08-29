@@ -18,12 +18,11 @@ const isVisible = useElementVisibility(target)
       </p>
     </div>
     <p class="text-sm">※決済方法はクレジットカード決済のみ</p>
-    <a
-      href="https://share.hsforms.com/1g5PzUD4iTrCT5LnOfX1LNwd8bov"
-      target="_blank"
+    <NuxtLink
+      to="/form/personal"
       class="block w-full p-4 rounded-xl bg-white text-orange-800 text-center text-xl sm:text-2xl">
       個人賛助会員 ご入会申込み
-    </a>
+    </NuxtLink>
   </article>
 </template>
 
