@@ -1,5 +1,6 @@
-export const onRequest = async ({request, params}) => {
+export const onRequest = async ({request, env, params}) => {
   const url = env.API_NOTE
+  console.log('params', params)
 
   try {
     const res = await fetch(url)
