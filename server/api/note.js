@@ -1,4 +1,4 @@
 export default defineEventHandler((event) => {
-  const url = 'https://note.com/api/v1/layout/magazine/m6c8cc8ac407b/section?page=1'
+  const url = process.env.API_NOTE
   return $fetch(url)
 })

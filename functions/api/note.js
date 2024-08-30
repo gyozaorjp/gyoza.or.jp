@@ -1,5 +1,5 @@
 export const onRequest = async ({request, params}) => {
-  const url = 'https://note.com/api/v1/layout/magazine/m6c8cc8ac407b/section?page=1'
+  const url = env.API_NOTE
 
   try {
     const res = await fetch(url)
