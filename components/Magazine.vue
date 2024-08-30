@@ -19,11 +19,11 @@ interface Magazine {
 }
 
 const magazineId = ref('m6c8cc8ac407b')
-const { data:magazine } = await useFetch<Magazine>('/api/note')
+const { data:magazine } = await useFetch<Magazine>('/api/note?page=1')
 </script>
 
 <template>
-  <section class="container mx-auto">
+  <section class="max-w-7xl container mx-auto">
     <HeaderAun
       :left="'/img/common/ic_h_news_01.png'"
       :right="'/img/common/ic_h_news_02.png'"

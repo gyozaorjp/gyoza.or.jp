@@ -7,7 +7,7 @@
       <h2 class="font-serif font-bold text-3xl sm:text-5xl text-center">コンテンツ</h2>
     </HeaderAun>
 
-    <div class="container mx-auto flex flex-col sm:flex-row justify-center gap-4">
+    <div class="max-w-7xl container mx-auto flex flex-col sm:flex-row justify-center gap-4">
       <article class="contents-card relative flex flex-col justify-between items-center gap-y-4 p-4">
           <h1 class="text-xl">小野寺力式<br />餃子の焼き方</h1>
           <img src="/how/onodera2023.jpg" class="w-full drop-shadow-xl" />
