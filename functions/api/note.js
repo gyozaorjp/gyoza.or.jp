@@ -1,9 +1,11 @@
 export const onRequest = async (context) => {
   const parser = new URL(context.request.url)
-  const url = context.env.API_NOTE + parser.search
+  const query = parser.search
+  const url = context.env.API_NOTE
+  console.log('url', url , query)
 
   try {
-    const res = await fetch(url)
+    const res = await fetch(url + query)
     const text = await res.text()
     const response = new Response(text)
     response.headers.set('Content-Type', 'application/json;charset=utf-8')
