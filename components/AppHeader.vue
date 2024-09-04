@@ -21,7 +21,7 @@ const menuExpand = ref(false)
       </div>
     </div>
     <nav
-      class="absolute top-0 w-full bg-slate-50/90 backdrop-blur pt-16 pb-4 z-0 transition duration-1000"
+      class="absolute top-0 w-full bg-slate-50/90 backdrop-blur pt-16 pb-4 z-0 transition duration-1000 drop-shadow"
       :class="[menuExpand?'translate-y-0':'-translate-y-full']"
       @click="menuExpand=!menuExpand">
       <Sitemap></Sitemap>

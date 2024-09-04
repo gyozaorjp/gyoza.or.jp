@@ -21,7 +21,7 @@ const props = defineProps({
   <article
     ref="target"
     class="relative w-full flex flex-col justify-between transition-opacity duration-500">
-    <div class="w-full overflow-hidden">
+    <div class="w-full overflow-hidden drop-shadow-md">
       <img :src="article.eyecatch" alt="" class="transition duration-1000 scale-125" :class="{isVisible, isHovered}" />
     </div>
     <div class="grow py-2 flex flex-col justify-between">

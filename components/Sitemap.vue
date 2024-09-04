@@ -67,6 +67,6 @@ a {
   @apply text-orange-950;
 }
 .btn-icon {
-  @apply bg-white p-2 rounded-xl w-12 h-12 shadow flex justify-center items-center;
+  @apply bg-white p-2 rounded-xl w-12 h-12 shadow-md flex justify-center items-center;
 }
 </style>

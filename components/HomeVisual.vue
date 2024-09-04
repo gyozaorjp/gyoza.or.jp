@@ -39,6 +39,6 @@ const isVisible = useElementVisibility(target)
 
 .btn {
   @apply block w-full p-4 rounded-xl transition-all duration-1000 bg-gradient-to-r from-red-700 to-red-800 hover:to-red-600 text-white no-underline;
-  @apply drop-shadow hover:drop-shadow-none;
+  @apply shadow-none hover:shadow-xl;
 }
 </style>
