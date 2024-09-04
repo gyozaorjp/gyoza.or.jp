@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core'
+import Parser from 'rss-parser'
 const runtimeConfig = useRuntimeConfig();
 
 const { copy, copied, isSupported } = useClipboard()
@@ -26,8 +27,9 @@ useHead({
 })
 
 
-const { data:podcast } = await useFetch('/api/podcast')
-
+const { data } = await useFetch('/api/podcast')
+const parser = new Parser()
+const podcast = await parser.parseString(data.value)
 </script>
 
 <template>
@@ -110,8 +112,10 @@ const { data:podcast } = await useFetch('/api/podcast')
     <section v-if="podcast && podcast.items.length > 0" class="mt-4 p-4 w-full flex flex-col gap-y-2 bg-slate-50">
       <h1 class="font-bold text-xl py-2">Podcast 聴く餃子 配信リスト</h1>
       <div v-for="ep in podcast.items" class="flex flex-col sm:flex-row justify-between items-center gap-x-4">
-        <a :href="ep.link" target="_blank" class="text-sm self-start">{{ ep.title }}</a>
-        <p class="text-xs self-end">{{ $dayjs(ep.pubDate).format('YYYY/MM/DD') }}</p>
+        <p class="text-xs self-start">{{ $dayjs(ep.pubDate).format('YYYY/MM/DD') }}</p>
+        <p class="text-sm self-end w-full">
+          <a :href="ep.link" target="_blank">{{ ep.title }}</a>
+        </p>
       </div>
     </section>
 

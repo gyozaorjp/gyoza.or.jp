@@ -1,5 +1,9 @@
 <script setup lang="ts">
-const { data:podcast } = await useFetch('/api/podcast')
+import Parser from 'rss-parser'
+
+const { data } = await useFetch<string>('/api/podcast')
+const parser = new Parser()
+const podcast = await parser.parseString(data.value)
 </script>
 
 <template>
