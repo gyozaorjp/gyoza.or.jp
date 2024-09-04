@@ -107,7 +107,7 @@ const { data:podcast } = await useFetch('/api/podcast')
       </div>
     </section>
 
-    <section class="mt-4 p-4 w-full flex flex-col gap-y-2 bg-slate-50">
+    <section v-if="podcast && podcast.items.length > 0" class="mt-4 p-4 w-full flex flex-col gap-y-2 bg-slate-50">
       <h1 class="font-bold text-xl py-2">Podcast 聴く餃子 配信リスト</h1>
       <div v-for="ep in podcast.items" class="flex flex-col sm:flex-row justify-between items-center gap-x-4">
         <a :href="ep.link" target="_blank" class="text-sm self-start">{{ ep.title }}</a>
