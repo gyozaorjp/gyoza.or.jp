@@ -1,3 +1,8 @@
+<script setup lang="ts">
+const { data:podcast } = await useFetch('/api/podcast')
+const latestPodcast = ref(podcast.value.items[0])
+</script>
+
 <template>
   <section>
     <HeaderAun
@@ -17,8 +22,12 @@
 
       <article class="contents-card relative flex flex-col justify-between items-center gap-y-4 p-4">
         <h1 class="text-xl">Podcast<br />聴く餃子</h1>
-        <div class="grow flex items-center">
+        <div class="grow flex flex-col justify-center items-center">
           <img src="/podcast/cover.jpg" class="w-full drop-shadow-xl" />
+          <div class="bg-white text-black p-2 flex flex-col gap-y-2">
+            <p class="text-xs text-slate-400">{{ $dayjs(latestPodcast.pubDate).format('YYYY/MM/DD HH:mm:ss') }}更新</p>
+            <p class="text-sm text-slate-700">{{ latestPodcast.title }}</p>
+          </div>
         </div>
         <p class="text-sm text-slate-700">焼き餃子文化への愛を語る音声番組です。毎週火曜日に配信。</p>
         <NuxtLink to="/podcast" class="absolute inset-0"></NuxtLink>

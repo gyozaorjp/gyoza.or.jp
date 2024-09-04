@@ -2,7 +2,6 @@ export const onRequest = async (context) => {
   const parser = new URL(context.request.url)
   const query = parser.search
   const url = context.env.API_NOTE
-  console.log('url', url , query)
 
   try {
     const res = await fetch(url + query)

@@ -25,14 +25,20 @@ useHead({
   ]
 })
 
+
+const { data:podcast } = await useFetch('/api/podcast')
+
 </script>
 
 <template>
   <PageHeader>Podcast 聴く餃子</PageHeader>
-  <main class="container max-w-4xl mx-auto px-4 py-12 flex flex-col items-center gap-y-8">
+  <main class="relative container max-w-4xl mx-auto px-4 py-12 flex flex-col items-center gap-y-8">
     <header class="bg-white p-4 rounded-xl border border-solid flex flex-col gap-y-4">
       <p>「聴く餃子」は、焼き餃子文化への愛を語る番組です。日本で進化した焼き餃子文化の魅力を、焼き餃子協会 代表理事・ぎょうざジョッキーの小野寺力が毎週火曜日にお送りしています。</p>
       <p class="text-sm">※「聴く餃子」は<a href="https://amzn.to/3VK4yvg" target="_blank">パラダイス山元師匠のエッセイ集「読む餃子」</a>からのインスパイアです。</p>
+      <a href="#podcastform" class="mt-4 w-full max-w-lg mx-auto text-center text-white no-underline bg-orange-500 p-4 rounded-xl">
+        聴く餃子 ご意見・ご感想フォーム
+      </a>
     </header>
 
     <section class="w-full flex flex-col items-center hover:opacity-90 transition-opacity duration-1000">
@@ -101,9 +107,17 @@ useHead({
       </div>
     </section>
 
-    <HubspotForm :formId="'28fd65cf-368d-41c4-b964-e8490da2cf7c'" class="mt-8 bg-slate-50 rounded-3xl">
+    <section class="mt-4 p-4 w-full flex flex-col gap-y-2 bg-slate-50">
+      <h1 class="font-bold text-xl py-2">Podcast 聴く餃子 配信リスト</h1>
+      <div v-for="ep in podcast.items" class="flex flex-col sm:flex-row justify-between items-center gap-x-4">
+        <a :href="ep.link" target="_blank" class="text-sm self-start">{{ ep.title }}</a>
+        <p class="text-xs self-end">{{ $dayjs(ep.pubDate).format('YYYY/MM/DD') }}</p>
+      </div>
+    </section>
+
+    <HubspotForm id="podcastform" :formId="'28fd65cf-368d-41c4-b964-e8490da2cf7c'" class="mt-8 bg-slate-50 rounded-3xl">
       <template v-slot:header>
-        <h1 class="font-bold text-3xl py-2 text-center">聴く餃子 ご意見フォーム</h1>
+        <h1 class="font-bold text-3xl py-2 text-center">聴く餃子 ご意見・ご感想フォーム</h1>
         <p class="text-sm text-center">ご感想、ご意見、ご要望などいただけると、大変励みになります！</p>
       </template>
     </HubspotForm>
