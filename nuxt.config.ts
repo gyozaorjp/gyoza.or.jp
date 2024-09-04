@@ -44,6 +44,7 @@ export default defineNuxtConfig({
       },
       'Noto+Sans+Mono': {
         wght: [
+          100, // thin
           400, // normal
         ]
       },

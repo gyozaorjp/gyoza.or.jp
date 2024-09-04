@@ -112,7 +112,7 @@ const podcast = await parser.parseString(data.value)
     <section v-if="podcast && podcast.items.length > 0" class="mt-4 p-4 w-full flex flex-col gap-y-2 bg-slate-50">
       <h1 class="font-bold text-xl py-2">Podcast 聴く餃子 配信リスト</h1>
       <div v-for="ep in podcast.items" class="flex flex-col sm:flex-row justify-between items-center gap-x-4">
-        <p class="text-xs self-start">{{ $dayjs(ep.pubDate).format('YYYY/MM/DD') }}</p>
+        <p class="font-thin font-mono text-xs self-start">{{ $dayjs(ep.pubDate).format('YYYY/MM/DD') }}</p>
         <p class="text-sm self-end w-full">
           <a :href="ep.link" target="_blank">{{ ep.title }}</a>
         </p>

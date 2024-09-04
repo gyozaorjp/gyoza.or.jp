@@ -19,16 +19,16 @@ const podcast = await parser.parseString(data.value)
       <article class="contents-card relative flex flex-col justify-between items-center gap-y-4 p-4">
           <h1 class="text-xl">小野寺力式<br />餃子の焼き方</h1>
           <img src="/how/onodera2023.jpg" class="w-full drop-shadow-xl" />
-          <p class="text-sm text-slate-700">誰でも簡単にキレイに美味しく焼ける方法をご紹介しています。</p>
+          <p class="text-sm text-slate-700">誰でも簡単にキレイに美味しく焼ける方法をPDFや動画でご紹介しています。</p>
           <NuxtLink to="/how" title="餃子の焼き方" class="absolute inset-0"></NuxtLink>
       </article>
 
       <article class="contents-card relative flex flex-col justify-between items-center gap-y-4 p-4">
         <h1 class="text-xl">Podcast<br />聴く餃子</h1>
-        <div class="grow flex flex-col justify-center items-center">
-          <img src="/podcast/cover.jpg" class="w-full drop-shadow-xl" />
-          <div v-if="podcast && podcast.items.length > 0" class="bg-white text-black p-2 flex flex-col gap-y-2">
-            <p class="text-xs text-slate-400">{{ $dayjs(podcast.items[0].pubDate).format('YYYY/MM/DD HH:mm:ss') }}更新</p>
+        <div class="grow flex flex-col justify-center items-center drop-shadow-xl">
+          <img src="/podcast/cover.jpg" class="w-full" />
+          <div v-if="podcast && podcast.items.length > 0" class="bg-white text-black p-2 flex flex-col gap-y-1">
+            <p class="font-mono font-thin text-xs">{{ $dayjs(podcast.items[0].pubDate).format('YYYY/MM/DD HH:mm') }}</p>
             <p class="text-sm text-slate-700">{{ podcast.items[0].title }}</p>
           </div>
         </div>
