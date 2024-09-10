@@ -79,8 +79,10 @@ useHead({
           <li>こんなコンテンツを発信しました</li>
         </ul>
 
-        <p class="text-xs">※オープンチャットのルールで、個人情報の書き込みができません。もしご連絡先のやり取りが必要な場合には小野寺が仲介します</p>
+        <p class="text-xs">※オープンチャットのルールで、個人情報の書き込みができません。もしご連絡先のやり取りが必要な場合には事務局にご相談ください</p>
 
+        <h2 class="mt-4 text-center text-xl font-bold">登録はこちらから</h2>
+        <p class="text-center text-sm text-orange-800">参加される際は屋号やお名前が分かるようにお願いします</p>
         <a href="https://line.me/ti/g2/oT5p6YNqi3J8djo7I2tXGS04r8L_ohQgrVLBuQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank">
           <figure>
             <img src="/img/common/openchat-membersonly.jpg" alt="焼き餃子協会 会員限定コミュニティ" class="w-96 mx-auto" />
