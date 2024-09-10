@@ -1,6 +1,6 @@
 
 export const onRequest = async (context) => {
-  const url = context.env.API_NOTE
+  const url = context.env.API_PODCAST
 
   try {
     const res = await fetch(url)
