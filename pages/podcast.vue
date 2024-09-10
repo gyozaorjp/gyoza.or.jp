@@ -27,7 +27,10 @@ useHead({
 })
 
 
-const { data } = await useFetch('/api/podcast')
+const { data, error, refresh } = await useAsyncData(
+  'podcast',
+  () => $fetch('/api/podcast')
+)
 const parser = new Parser()
 const podcast = await parser.parseString(data.value)
 </script>
