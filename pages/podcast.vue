@@ -27,7 +27,7 @@ useHead({
 })
 
 
-const { data, error, refresh } = await useAsyncData(
+const { data, error, refresh } = await useLazyAsyncData(
   'podcast',
   () => $fetch('/api/podcast')
 )

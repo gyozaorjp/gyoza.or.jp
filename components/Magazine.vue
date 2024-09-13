@@ -19,7 +19,7 @@ interface Magazine {
 }
 
 const magazineId = ref('m6c8cc8ac407b')
-const { data:magazine } = await useFetch<Magazine>('/api/note?page=1')
+const { data:magazine } = await useLazyFetch<Magazine>('/api/note?page=1')
 </script>
 
 <template>

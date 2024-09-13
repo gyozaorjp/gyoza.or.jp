@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data } = await useFetch('/api/microcms/news')
+const { data } = await useLazyFetch('/api/microcms/news')
 const items = ref(data.value.contents)
 </script>
 
