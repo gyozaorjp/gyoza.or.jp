@@ -7,7 +7,7 @@ export const onRequest = async (context) => {
   try {
     const res = await fetch(base + api + query, {
       headers: {
-        'X-MICROCMS-API-KEY': process.env.API_MICROCMS_KEY,
+        'X-MICROCMS-API-KEY': context.env.API_MICROCMS_KEY,
       }
     })
     const text = await res.text()
