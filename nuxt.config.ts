@@ -12,16 +12,18 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-fonts',
-    // https://nuxt.com/modules/icon
-    '@nuxt/icon',
     '@nuxtjs/seo',
     '@nuxt/content',
     '@vueuse/nuxt',
     'dayjs-nuxt',
     'nuxt-gtag',
     'nuxt3-meta-pixel',
+    // https://ui.nuxt.com/
+    '@nuxt/ui',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts',
+    // https://nuxt.com/modules/icon
+    '@nuxt/icon',
   ],
 
   // https://nuxt.com/modules/tailwindcss

@@ -2,6 +2,7 @@
   <main>
     <HomeVisual></HomeVisual>
     <HomeConcept id="about"></HomeConcept>
+    <News></News>
     <HomeEntry id="entry"></HomeEntry>
     <div class="bg-slate-50 py-12">
       <HomeContents></HomeContents>
