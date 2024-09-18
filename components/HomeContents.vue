@@ -1,5 +1,8 @@
 <script setup lang="ts">
-const { data:podcast } = await useFetch<string>('/api/podcast')
+const { data:podcast } = await useFetch<string>('/api/podcast', {
+  lazy: true,
+  server: false,
+})
 </script>
 
 <template>
