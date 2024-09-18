@@ -1,14 +1,18 @@
 <script setup lang="ts">
-const { data } = await useLazyFetch('/api/microcms/news')
-const items = ref(data.value.contents)
+const { data } = await useFetch('/api/microcms/news', {
+  lazy: true,
+  server: false,
+})
+
+const news = computed(() => data.value?.contents ?? [])
 </script>
 
 <template>
-  <section class="w-full py-4 background">
+  <section v-if="news.length" class="w-full py-4 background">
     <div class="relative container mx-auto p-4 flex flex-col items-center">
       <h1 class="font-serif text-xl text-orange-50">News</h1>
       <UCarousel
-        :items="items"
+        :items="news"
         :ui="{
           item: 'basis-full',
           indicators: {

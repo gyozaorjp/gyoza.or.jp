@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import Parser from 'rss-parser'
-
-const { data } = await useFetch<string>('/api/podcast')
-const parser = new Parser()
-const podcast = await parser.parseString(data.value)
+const { data:podcast } = await useFetch<string>('/api/podcast')
 </script>
 
 <template>
@@ -33,7 +29,7 @@ const podcast = await parser.parseString(data.value)
           </div>
         </div>
         <p class="text-sm text-slate-700">焼き餃子文化への愛を語る音声番組です。毎週火曜日に配信。</p>
-        <NuxtLink to="/podcast" class="absolute inset-0"></NuxtLink>
+        <NuxtLink to="/podcast" aria-label="Podcast 聴く餃子" class="absolute inset-0"></NuxtLink>
       </article>
 
       <article class="contents-card relative flex flex-col justify-between items-center gap-y-4 p-4">

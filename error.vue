@@ -9,7 +9,7 @@ const error = useError();
         <h1 class="text-5xl py-4 text-slate-50">HTTP {{ error?.statusCode }}</h1>
         <p class="text-xl text-slate-50">{{ error?.message }}</p>
         <p class="text-slate-200">{{ error.url }}</p>
-        <NuxtLink to="/" class="mt-4 p-4 rounded-xl no-underline bg-white">トップページ</NuxtLink>
+        <NuxtLink to="/" aria-label="トップページ" class="mt-4 p-4 rounded-xl no-underline bg-white">トップページ</NuxtLink>
       </section>
     </main>
     <AppFooter class></AppFooter>

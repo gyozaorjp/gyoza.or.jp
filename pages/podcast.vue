@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core'
-import Parser from 'rss-parser'
 const runtimeConfig = useRuntimeConfig();
 
 const { copy, copied, isSupported } = useClipboard()
@@ -26,13 +25,10 @@ useHead({
   ]
 })
 
-
-const { data, error, refresh } = await useLazyAsyncData(
-  'podcast',
-  () => $fetch('/api/podcast')
-)
-const parser = new Parser()
-const podcast = await parser.parseString(data.value)
+const { data:podcast } = await useFetch('/api/podcast', {
+  lazy: true,
+  server: false,
+})
 </script>
 
 <template>
@@ -56,7 +52,7 @@ const podcast = await parser.parseString(data.value)
         width="100%"
         height="352"
         frameBorder="0"
-        allowfullscreen=""
+        allowfullscreen
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"></iframe>
     </section>
@@ -112,7 +108,7 @@ const podcast = await parser.parseString(data.value)
       </div>
     </section>
 
-    <section v-if="podcast && podcast.items.length > 0" class="mt-4 p-4 w-full flex flex-col gap-y-2 bg-slate-50">
+    <section v-if="podcast && podcast.items?.length > 0" class="mt-4 p-4 w-full flex flex-col gap-y-2 bg-slate-50">
       <h1 class="font-bold text-xl py-2">Podcast 聴く餃子 配信リスト</h1>
       <div v-for="ep in podcast.items" class="flex flex-col sm:flex-row justify-between items-center gap-x-4">
         <p class="font-thin font-mono text-xs self-start">{{ $dayjs(ep.pubDate).format('YYYY/MM/DD') }}</p>
