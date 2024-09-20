@@ -40,16 +40,21 @@ contact: 1
 ## 支部
 
 | 宮崎支部 ||
-|-|-|
+|:-|:-|
 | 支部長 | [恒吉浩之](https://x.com/nakahi "恒吉浩之 X") |
 | 事務局 | 〒889-2162 宮崎県宮崎市青島6-10-5 |
 | Mail | `miyazaki@gyoza.or.jp` |
 
 | 鹿児島支部 ||
-|-|-|
+|:-|:-|
 | 支部長 | [カタオカマナミ](https://note.com/gyoza_journey "カタオカマナミ note") |
 | 事務局 | [株式会社ビッグファイブ](https://www.bigfive-shop.com/ "株式会社ビッグファイブ")<br />〒891-0115 鹿児島県鹿児島市東開町4-74 |
 | Mail | `kagoshima@gyoza.or.jp` |
+
+| 福岡支部 ||
+|:-|:-|
+| 支部長 | [澤村幹生](https://www.instagram.com/kami_aoi/ "澤村幹生 Instagram") |
+| Mail | `fukuoka@gyoza.or.jp` |
 
 ## 諸規定
 

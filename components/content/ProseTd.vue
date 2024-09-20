@@ -3,3 +3,8 @@
     <slot />
   </td>
 </template>
+<style scoped>
+td:first-child {
+  @apply w-24;
+}
+</style>
