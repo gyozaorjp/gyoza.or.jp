@@ -23,7 +23,6 @@ useHead({
           <h1 class="font-bold text-3xl py-2 text-center">2024年 焼き餃子協会アワード 候補者推薦</h1>
           <div class="max-w-xl mx-auto px-4 text-left text-sm">
             <p>日本の餃子文化を広め、高めていると思う方の<strong>お名前とその理由</strong>をご記入ください。複数人を推薦いただいても構いません。</p>
-            <p>推薦締め切りは9月末です。投票は10月に行います。</p>
           </div>
         </template>
       </HubspotForm>
