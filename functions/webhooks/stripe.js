@@ -22,7 +22,14 @@ export async function onRequestPost({ request, env }) {
   switch (event.type) {
     case 'customer.subscription.created': {
       const subscription = event.data.object;
-      message = `🎉 新しいサブスクリプションが作成されました！\n顧客ID: ${subscription.customer}\nプラン: ${subscription.plan.nickname}`;
+      const shipping = subscription.customer_shipping;
+      message = ```
+        name ${subscription.customer_name}
+        phone ${subscription.customer_phone}
+        email ${subscription.customer_email}
+        address ${shipping.address.postal_code} ${shipping.address.state} ${shipping.address.city} ${shipping.address.line1} ${shipping.address.line2}
+        https://dashboard.stripe.com/customers/${subscription.customer}
+      ```
       break;
     }
     case 'customer.subscription.deleted': {
