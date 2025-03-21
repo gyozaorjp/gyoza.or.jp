@@ -23,18 +23,20 @@ export async function onRequestPost({ request, env }) {
     case 'customer.subscription.created': {
       const subscription = event.data.object;
       console.log('LOG DATA', subscription)
-      message = `サブスクリプションが開始されました\n
-      https://dashboard.stripe.com/subscriptions/${subscription.id}`;
+      message = `サブスクリプションが開始されました\nhttps://dashboard.stripe.com/subscriptions/${subscription.id}`;
       break;
     }
     case 'customer.subscription.deleted': {
       const subscription = event.data.object;
-      message = `⚠️ サブスクリプションが解約されました。\n顧客ID: ${subscription.customer}\nプラン: ${subscription.plan.nickname}`;
+      console.log('LOG DATA', subscription)
+      message = `サブスクリプションが解約されました\nhttps://dashboard.stripe.com/subscriptions/${subscription.id}`;
       break;
     }
     case 'customer.updated': {
       const customer = event.data.object;
-
+      console.log('LOG DATA', customer)
+      message = `顧客の住所が変更されました\nhttps://dashboard.stripe.com/customers/${customer.id}`;
+      /*
       if (customer.address) {
         const address = customer.address;
         message = `🏠 顧客の住所が変更されました:\n顧客ID: ${customer.id}\n新しい住所:\n${address.line1 || ''}\n${address.city || ''}, ${address.state || ''} ${address.postal_code || ''}\n${address.country || ''}`;
@@ -44,11 +46,12 @@ export async function onRequestPost({ request, env }) {
         const shippingAddress = customer.shipping.address;
         message += `\n📦 配送先住所が変更されました:\n${shippingAddress.line1 || ''}\n${shippingAddress.city || ''}, ${shippingAddress.state || ''} ${shippingAddress.postal_code || ''}\n${shippingAddress.country || ''}`;
       }
+      */
       break;
     }
     default:
-      console.log(`Unhandled event type: ${event.type}`);
-      return new Response('Event Not Handled', { status: 200 });
+      console.log(`Unhandled event type: ${event.type} ID: ${event.data.object.id}`);
+      message = `LOG DATA` + JSON.stringify(event.data.object)
   }
 
   // Slack通知を送信
