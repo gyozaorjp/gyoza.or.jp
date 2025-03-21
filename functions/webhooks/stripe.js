@@ -23,13 +23,13 @@ export async function onRequestPost({ request, env }) {
     case 'customer.subscription.created': {
       const subscription = event.data.object;
       const shipping = subscription.customer_shipping;
-      message = ```
+      message = `
         name ${subscription.customer_name}
         phone ${subscription.customer_phone}
         email ${subscription.customer_email}
         address ${shipping.address.postal_code} ${shipping.address.state} ${shipping.address.city} ${shipping.address.line1} ${shipping.address.line2}
         https://dashboard.stripe.com/customers/${subscription.customer}
-      ```
+      `
       break;
     }
     case 'customer.subscription.deleted': {
