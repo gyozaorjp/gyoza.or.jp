@@ -10,7 +10,8 @@ export async function onRequestPost({ request, env }) {
 
   try {
     // Stripeの署名検証
-    event = stripe.webhooks.constructEvent(payload, sig, webhookSecret);
+    event = await stripe.webhooks.constructEventAsync(payload, sig, webhookSecret);
+
   } catch (err) {
     console.error('Webhook Error:', err.message);
     return new Response(`Webhook Error: ${err.message}`, { status: 400 });
