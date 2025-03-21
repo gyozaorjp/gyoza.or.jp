@@ -26,6 +26,21 @@ export async function onRequestPost({ request, env }) {
       message = `サブスクリプションが開始されました\nhttps://dashboard.stripe.com/subscriptions/${subscription.id}`;
       break;
     }
+    case 'customer.subscription.updated': {
+      const subscription = event.data.object;
+      console.log('LOG DATA', subscription)
+      message = `サブスクリプションが更新されました\nhttps://dashboard.stripe.com/subscriptions/${subscription.id}\n`;
+      if (subscription.cancellation_details) {
+        const details = subscription.cancellation_details;
+        if (details.feedback) {
+          message += `feedback ${details.feedback}\n`
+        }
+        if (details.comment) {
+          message += `feedback ${details.comment}\n`
+        }
+      }
+      break;
+    }
     case 'customer.subscription.deleted': {
       const subscription = event.data.object;
       console.log('LOG DATA', subscription)
@@ -35,23 +50,21 @@ export async function onRequestPost({ request, env }) {
     case 'customer.updated': {
       const customer = event.data.object;
       console.log('LOG DATA', customer)
-      message = `顧客の住所が変更されました\nhttps://dashboard.stripe.com/customers/${customer.id}`;
-      /*
+      message = `顧客情報が変更されました\nhttps://dashboard.stripe.com/customers/${customer.id}\n`;
       if (customer.address) {
         const address = customer.address;
-        message = `🏠 顧客の住所が変更されました:\n顧客ID: ${customer.id}\n新しい住所:\n${address.line1 || ''}\n${address.city || ''}, ${address.state || ''} ${address.postal_code || ''}\n${address.country || ''}`;
+        message += `🏠 顧客の住所が変更されました:\n顧客ID: ${customer.id}\n新しい住所:\n${address.line1 || ''}\n${address.city || ''}, ${address.state || ''} ${address.postal_code || ''}\n${address.country || ''}\n`;
       }
 
       if (customer.shipping && customer.shipping.address) {
         const shippingAddress = customer.shipping.address;
-        message += `\n📦 配送先住所が変更されました:\n${shippingAddress.line1 || ''}\n${shippingAddress.city || ''}, ${shippingAddress.state || ''} ${shippingAddress.postal_code || ''}\n${shippingAddress.country || ''}`;
+        message += `\n📦 配送先住所が変更されました:\n${shippingAddress.line1 || ''}\n${shippingAddress.city || ''}, ${shippingAddress.state || ''} ${shippingAddress.postal_code || ''}\n${shippingAddress.country || ''}\n`;
       }
-      */
       break;
     }
     default:
       console.log(`Unhandled event type: ${event.type} ID: ${event.data.object.id}`);
-      message = `LOG DATA` + JSON.stringify(event.data.object)
+      message = `LOG DATA ${event.type}` + JSON.stringify(event.data.object)
   }
 
   // Slack通知を送信
