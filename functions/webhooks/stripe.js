@@ -59,6 +59,7 @@ async function handleStripeEvent(event) {
     'customer.subscription.updated': handleSubscriptionUpdated,
     'customer.subscription.deleted': handleSubscriptionDeleted,
     'customer.updated': handleCustomerUpdated,
+    'customer.created': handleCustomerCreated,
   };
 
   const handler = handlers[event.type];
@@ -108,4 +109,9 @@ function handleCustomerUpdated(customer) {
   }
   
   return message;
+}
+
+function handleCustomerCreated(customer) {
+  console.log('LOG DATA', customer);
+  return `顧客情報が追加されました\nhttps://dashboard.stripe.com/customers/${customer.id}\n`;
 }
