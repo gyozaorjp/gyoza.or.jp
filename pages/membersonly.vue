@@ -17,17 +17,6 @@ useHead({
   <PageHeader>会員限定</PageHeader>
   <main class="relative container max-w-4xl mx-auto px-4 py-12 flex flex-col items-center gap-y-8">
 
-    <section class="w-full">
-      <HubspotForm :formId="'aed4dece-d2c2-4ef3-9640-36574e5e12a5'" class="mt-8 bg-slate-50 rounded-3xl">
-        <template v-slot:header>
-          <h1 class="font-bold text-3xl py-2 text-center">2024年 焼き餃子協会アワード 候補者推薦</h1>
-          <div class="max-w-xl mx-auto px-4 text-left text-sm">
-            <p>日本の餃子文化を広め、高めていると思う方の<strong>お名前とその理由</strong>をご記入ください。複数人を推薦いただいても構いません。</p>
-          </div>
-        </template>
-      </HubspotForm>
-    </section>
-
     <section class="w-full px-4 py-4 flex flex-col items-center bg-slate-50 text-center">
       <h1 class="font-bold text-3xl py-2">
         会費について
@@ -38,6 +27,7 @@ useHead({
         <ul>
           <li>クレジットカードの更新、変更</li>
           <li>焼き餃子協会からの退会（クレジットカード決済の場合）</li>
+          <li>逸品ぎょうざ頒布会の解約、配送先住所変更</li>
         </ul>
         <a class="btn my-4"
           href="https://billing.stripe.com/p/login/28odTK9JA6bB9q07ss"
@@ -51,7 +41,8 @@ useHead({
         <ul>
           <li>会費に対する領収書の発行（年単位のみとなります）</li>
           <li>個人賛助会費の月払いから年払いへの変更</li>
-          <li>逸品ぎょうざ頒布会の申し込み、解約、配送先住所変更</li>
+          <li>逸品ぎょうざ頒布会の申し込み</li>
+          <li>焼き餃子協会からの退会（クレジットカード決済以外の場合）</li>
           <li>その他、焼き餃子協会事務局へのご要望</li>
         </ul>
         <a class="btn my-4"
