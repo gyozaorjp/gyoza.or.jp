@@ -150,7 +150,10 @@ const isVisible = useElementVisibility(target)
       <EntryBusiness></EntryBusiness>
       <EntryPersonal></EntryPersonal>
     </div>
-    <p>※年度途中ご入会の場合、年会費は日割計算となり、翌年度以降は1月決済となります</p>
+    <div class="flex flex-col">
+      <p>※年度途中ご入会の場合、年会費は後日に日割精算いたします。翌年度以降は1月決済となります。</p>
+      <p>※逸品ぎょうざ頒布会は入会後にご案内申し上げます。</p>
+    </div>
 
   </section>
 </template>

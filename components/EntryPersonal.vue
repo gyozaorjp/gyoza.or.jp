@@ -18,11 +18,21 @@ const isVisible = useElementVisibility(target)
       </p>
     </div>
     <p class="text-sm">※決済方法はクレジットカード決済のみ</p>
-    <NuxtLink
-      to="/form/personal"
-      class="block w-full p-4 rounded-xl bg-white text-orange-800 text-center text-xl sm:text-2xl">
-      個人賛助会員 ご入会申込み
-    </NuxtLink>
+    <p class="text-xl sm:text-2xl">ご入会申込</p>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a
+        href="https://buy.stripe.com/dR64gJcZO3ck7qo4gm"
+        target="_blank"
+        class="block w-full sm:w-1/2 p-4 rounded-xl bg-white text-orange-800 text-center text-xl sm:text-2xl">
+        年払い
+      </a>
+      <a
+        href="https://buy.stripe.com/cN2dRj2la3ckbGEbIP"
+        target="_blank"
+        class="block w-full sm:w-1/2 p-4 rounded-xl bg-white text-orange-800 text-center text-xl sm:text-2xl">
+        月払い
+      </a>
+    </div>
   </article>
 </template>
 
