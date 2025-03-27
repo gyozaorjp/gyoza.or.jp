@@ -161,12 +161,12 @@ const isVisible = useElementVisibility(target)
       <p>※逸品ぎょうざ頒布会は入会後にご案内申し上げます。</p>
     </div>
 
-    <div class="mt-8 flex flex-col justify-center items-center">
-      <h2 class="mt-8 text-xl sm:text-2xl py-4">オプションサービス</h2>
+    <div class="mt-4 flex flex-col justify-center items-center">
+      <h2 class="text-xl sm:text-2xl py-4">オプションサービス</h2>
       <a href="https://share.hsforms.com/27A4W-cmMSgaob5EoaHTCCgd8bov" target="_blank" class="block w-full p-4 rounded-xl bg-white text-orange-800 text-center text-xl sm:text-lg hover:scale-105 transition-transform duration-300">
         逸品ぎょうざ頒布会 3,960円 /月会費
       </a>
-      <p class="mt-2 text-sm">決済方法はクレジットカード決済のみ</p>
+      <p class="mt-2 text-sm">クレジットカード決済のみ</p>
     </div>
   </section>
 </template>
