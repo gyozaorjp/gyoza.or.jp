@@ -10,13 +10,12 @@ const isVisible = useElementVisibility(target)
     class="w-full bg-orange-800 text-white p-6 rounded-xl flex flex-col justify-between items-center gap-y-4 text-center shadow-2xl transition-transform duration-1000 scale-50"
     :class="{isVisible}">
     <p class="text-3xl font-bold">法人賛助会員</p>
-    <p class="text-xl text-center">年会費 <span class="font-mono ml-4">60,000円 / 1口</span></p>
-    <p class="text-sm">※決済方法は銀行振込かクレジットカード決済</p>
     <NuxtLink
       to="/form/biz"
-      class="block w-full p-4 rounded-xl bg-white text-orange-800 text-center text-xl sm:text-2xl">
-      法人賛助会員 ご入会申込み
+      class="block w-full p-4 rounded-xl bg-white text-orange-800 text-center text-xl sm:text-lg hover:scale-105 transition-transform duration-300">
+      <span class="font-mono">60,000円</span> / 年会費
     </NuxtLink>
+    <p class="text-sm">銀行振込 / クレジットカード決済</p>
   </article>
 </template>
 

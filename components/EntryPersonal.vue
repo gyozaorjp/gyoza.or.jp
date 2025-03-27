@@ -10,29 +10,21 @@ const isVisible = useElementVisibility(target)
     class="w-full bg-orange-800 text-white p-6 rounded-xl flex flex-col justify-between gap-y-4 text-center shadow-2xl transition-transform duration-1000 scale-50"
     :class="{isVisible}">
     <p class="text-3xl font-bold">個人賛助会員</p>
-    <p>年払か月払をお選び頂けます</p>
-    <div>
-      <p class="text-xl text-center">
-        年払い <span class="font-mono ml-4">5,000円 / 1口</span><br />
-        月払い<span class="font-mono ml-12">500円 / 1口</span>
-      </p>
-    </div>
-    <p class="text-sm">※決済方法はクレジットカード決済のみ</p>
-    <p class="text-xl sm:text-2xl">ご入会申込</p>
-    <div class="flex flex-col sm:flex-row gap-4">
+    <div class="flex flex-col sm:flex-row gap-4 text-xl sm:text-lg text-orange-800 text-center">
       <a
         href="https://buy.stripe.com/dR64gJcZO3ck7qo4gm"
         target="_blank"
-        class="block w-full sm:w-1/2 p-4 rounded-xl bg-white text-orange-800 text-center text-xl sm:text-2xl">
-        年払い
+        class="block w-full sm:w-1/2 p-4 rounded-xl bg-white hover:scale-105 transition-transform duration-300">
+        <span class="font-mono">5,000円</span> /年会費
       </a>
       <a
         href="https://buy.stripe.com/cN2dRj2la3ckbGEbIP"
         target="_blank"
-        class="block w-full sm:w-1/2 p-4 rounded-xl bg-white text-orange-800 text-center text-xl sm:text-2xl">
-        月払い
+        class="block w-full sm:w-1/2 p-4 rounded-xl bg-white hover:scale-105 transition-transform duration-300">
+        <span class="font-mono">500円</span> /月会費
       </a>
     </div>
+    <p class="text-sm">クレジットカード決済のみ</p>
   </article>
 </template>
 

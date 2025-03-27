@@ -15,9 +15,6 @@ const isVisible = useElementVisibility(target)
     <p class="text-left">
       焼き餃子協会は、焼き餃子に関連する技術・情報の共有を通して、<br />日本の焼き餃子文化を世界の人々に楽しんでもらうことを目指しています。
     </p>
-    <p class="inline-block text-center bg-amber-200 p-2 text-sm">
-      ご入会にあたっては 書類審査を行なっております
-    </p>
 
     <h2 class="mt-8 text-3xl">会員種別と特典について</h2>
     <div class="mt-4 max-w-xl flex flex-col gap-y-8 divide-y divide-orange-900">
@@ -30,6 +27,26 @@ const isVisible = useElementVisibility(target)
           <dd class="text-lg">
             <p>焼き餃子協会の活動を毎月の会報メールでご報告いたします</p>
             <p class="text-base font-thin text-black">（法人賛助会員は複数のメールアドレスをご登録頂けます）</p>
+          </dd>
+        </dl>
+      </article>
+
+      <article class="pt-8 flex gap-x-4">
+        <div class="min-w-12">
+          <img src="/img/common/ic_medal_01.png" alt="" />
+        </div>
+        <dl class="w-full">
+          <dt class="text-xl font-bold">逸品ぎょうざ頒布会の参加</dt>
+          <dd class="text-lg">
+            <p>全国の逸品餃子を工場から毎月直送します</p>
+            <p class="text-base font-thin text-black">（頒布会会費 3,960円/月）</p>
+          </dd>
+          <dd class="mt-2">
+            <p class="text-right">
+              <a href="https://share.hsforms.com/27A4W-cmMSgaob5EoaHTCCgd8bov" target="_blank">
+              → 逸品ぎょうざ頒布会 参加お申込
+              </a>
+            </p>
           </dd>
         </dl>
       </article>
@@ -55,6 +72,7 @@ const isVisible = useElementVisibility(target)
           <dd class="text-lg">
             <p>今年の餃界の顔を決める焼き餃子協会アワードに投票いただけます</p>
           </dd>
+          <!--
           <dd class="mt-4 p-3 bg-orange-50 text-sm">
             <p class="py-2">これまでの受賞者</p>
             <ul class="flex flex-col gap-y-2">
@@ -75,19 +93,7 @@ const isVisible = useElementVisibility(target)
               </li>
             </ul>
           </dd>
-        </dl>
-      </article>
-
-      <article class="pt-8 flex gap-x-4">
-        <div class="min-w-12">
-          <img src="/img/common/ic_medal_01.png" alt="" />
-        </div>
-        <dl>
-          <dt class="text-xl font-bold">逸品ぎょうざ頒布会の参加</dt>
-          <dd class="text-lg">
-            <p>全国の逸品餃子を工場から毎月直送します</p>
-            <p class="text-base font-thin text-black">（頒布会会費 3,960円/月）</p>
-          </dd>
+          -->
         </dl>
       </article>
 
@@ -151,10 +157,17 @@ const isVisible = useElementVisibility(target)
       <EntryPersonal></EntryPersonal>
     </div>
     <div class="flex flex-col">
-      <p>※年度途中ご入会の場合、年会費は後日に日割精算いたします。翌年度以降は1月決済となります。</p>
+      <p>※年度途中ご入会の場合、年会費は日割精算いたします。翌年度以降は1月決済となります。</p>
       <p>※逸品ぎょうざ頒布会は入会後にご案内申し上げます。</p>
     </div>
 
+    <div class="mt-8 flex flex-col justify-center items-center">
+      <h2 class="mt-8 text-xl sm:text-2xl py-4">オプションサービス</h2>
+      <a href="https://share.hsforms.com/27A4W-cmMSgaob5EoaHTCCgd8bov" target="_blank" class="block w-full p-4 rounded-xl bg-white text-orange-800 text-center text-xl sm:text-lg hover:scale-105 transition-transform duration-300">
+        逸品ぎょうざ頒布会 3,960円 /月会費
+      </a>
+      <p class="mt-2 text-sm">決済方法はクレジットカード決済のみ</p>
+    </div>
   </section>
 </template>
 
