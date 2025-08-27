@@ -129,6 +129,7 @@ const { data:podcast } = await useFetch('/api/podcast', {
 </template>
 
 <style lang="postcss" scoped>
+@reference "tailwindcss";
 .platformLogo {
   @apply flex justify-center items-center p-4 bg-white rounded-3xl;
   @apply shadow-xl hover:shadow-2xl transition duration-1000;

@@ -16,6 +16,7 @@
 </template>
 
 <style lang="postcss" scoped>
+@reference "tailwindcss";
 .background {
   @apply bg-[url('/img/top/contact_bg@pc.jpg')] bg-cover bg-center bg-no-repeat;
 }

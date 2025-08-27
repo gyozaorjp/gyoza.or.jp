@@ -48,6 +48,7 @@ const { data:podcast } = await useFetch<string>('/api/podcast', {
 </template>
 
 <style scoped>
+@reference "tailwindcss";
 .contents-card {
   @apply w-full sm:w-1/3 p-4 bg-gradient-to-br from-orange-500 to-orange-300 text-white;
   @apply transition duration-1000 opacity-100 hover:opacity-90;

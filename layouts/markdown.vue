@@ -17,6 +17,7 @@ useSeoMeta({
 </template>
 
 <style lang="postcss" scoped>
+@reference "tailwindcss";
 ::v-deep(.contents) {
   @apply flex flex-col gap-y-4;
 

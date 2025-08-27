@@ -1,3 +1,5 @@
+import tailwindcss from "@tailwindcss/vite";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
@@ -10,7 +12,7 @@ export default defineNuxtConfig({
       SITE_URL: 'http://www.gyoza.or.jp/'
     },
   },
-
+  css: ['~/assets/css/main.css'],
   modules: [
     '@nuxtjs/seo',
     '@nuxt/content',
@@ -20,7 +22,7 @@ export default defineNuxtConfig({
     'nuxt3-meta-pixel',
     // https://ui.nuxt.com/
     '@nuxt/ui',
-    '@nuxtjs/tailwindcss',
+    //'@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
     // https://nuxt.com/modules/icon
     '@nuxt/icon',
@@ -28,7 +30,7 @@ export default defineNuxtConfig({
 
   // https://nuxt.com/modules/tailwindcss
   tailwindcss: {
-    cssPath: ['~/assets/css/tailwind.css', { injectPosition: "first" }],
+    cssPath: '~/assets/css/tailwind.css',
     configPath: 'tailwind.config',
     exposeConfig: false,
   },
@@ -104,4 +106,17 @@ export default defineNuxtConfig({
       failOnError: false,
     }
   },
+
+  // PostCSS設定
+  postcss: {
+    plugins: {
+      '@tailwindcss/postcss': {},
+      autoprefixer: {},
+    },
+  },
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ]
+  }
 })

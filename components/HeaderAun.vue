@@ -24,6 +24,7 @@ const props = defineProps({
 </template>
 
 <style lang="postcss" scoped>
+@reference "tailwindcss";
 .isVisible {
   @apply translate-x-0;
 }

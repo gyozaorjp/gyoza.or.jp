@@ -30,6 +30,7 @@ const menuExpand = ref(false)
 </template>
 
 <style scoped>
+@reference "tailwindcss";
 .line {
   @apply transition duration-1000 opacity-100 rotate-0 translate-x-0 translate-y-0;
 }

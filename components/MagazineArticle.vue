@@ -38,6 +38,7 @@ const props = defineProps({
 </template>
 
 <style lang="postcss" scoped>
+@reference "tailwindcss";
 .isVisible {
   @apply scale-100;
 }

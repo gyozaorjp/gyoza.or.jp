@@ -20,6 +20,7 @@ const isVisible = useElementVisibility(target)
 </template>
 
 <style scoped>
+@reference "tailwindcss";
 .isVisible {
   @apply scale-100;
 }

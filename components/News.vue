@@ -35,6 +35,7 @@ const news = computed(() => data.value?.contents ?? [])
 </template>
 
 <style scoped>
+@reference "tailwindcss";
 .background {
   @apply bg-cover bg-center bg-no-repeat bg-[url('/img/top/visual-top_bg@sp.png')];
 }

@@ -115,6 +115,7 @@ useHead({
 </template>
 
 <style lang="postcss" scoped>
+@reference "tailwindcss";
 .btn {
   @apply p-4 bg-orange-600 text-white text-center rounded-xl;
 }

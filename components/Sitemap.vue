@@ -63,6 +63,7 @@
 </template>
 
 <style lang="postcss" scoped>
+@reference "tailwindcss";
 a {
   @apply text-orange-950;
 }

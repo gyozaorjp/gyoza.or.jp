@@ -26,6 +26,7 @@ const isVisible = useElementVisibility(target)
 </template>
 
 <style lang="postcss" scoped>
+@reference "tailwindcss";
 .background-base {
   @apply bg-cover bg-center bg-no-repeat bg-[url('/img/top/visual-top_img@pc.jpg')];
 }

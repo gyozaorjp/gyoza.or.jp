@@ -4,6 +4,7 @@
   </td>
 </template>
 <style scoped>
+@reference "tailwindcss";
 td:first-child {
   @apply w-24;
 }

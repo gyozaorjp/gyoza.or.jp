@@ -66,6 +66,7 @@ const copyurl = () => {
 </template>
 
 <style scoped>
+@reference "tailwindcss";
 .iconset {
   @apply p-2 flex items-center border border-solid border-slate-100;
 }
