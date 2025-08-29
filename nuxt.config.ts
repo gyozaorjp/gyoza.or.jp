@@ -1,11 +1,9 @@
-import tailwindcss from "@tailwindcss/vite";
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   ssr: true,
-  target: 'static',
+
 
   runtimeConfig: {
     public: {
@@ -22,7 +20,7 @@ export default defineNuxtConfig({
     'nuxt3-meta-pixel',
     // https://ui.nuxt.com/
     '@nuxt/ui',
-    //'@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
     // https://nuxt.com/modules/icon
     '@nuxt/icon',
@@ -114,9 +112,4 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  vite: {
-    plugins: [
-      tailwindcss(),
-    ]
-  }
 })
