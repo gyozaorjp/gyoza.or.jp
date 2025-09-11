@@ -75,6 +75,10 @@ export default defineNuxtConfig({
     markdown: {
       anchorLinks: false,
     },
+    // 静的生成時のコンテンツ解決を改善
+    experimental: {
+      clientDB: false,
+    },
   },
 
   // https://nuxt.com/modules/dayjs
@@ -102,6 +106,23 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
       failOnError: false,
+      // 静的生成時のコンテンツ解決を改善
+      routes: [
+        '/how',
+        '/about',
+        '/entry',
+        '/transactionlaw',
+        '/antisocialist',
+        '/supermarket',
+        '/membership',
+        '/privacy',
+        '/statute',
+        '/podcast',
+        '/membersonly',
+        '/form',
+        '/form/biz',
+        '/form/personal',
+      ]
     }
   },
 
