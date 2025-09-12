@@ -10,7 +10,7 @@ const isVisible = useElementVisibility(target)
       class="background-card p-8 flex flex-col justify-center items-center gap-y-8 shadow-2xl"
       :class="{isVisible}">
       <img src="/img/top/visual-top_h@pc.png" alt="" class="w-36 sm:w-40 md:w-48" />
-      <p class="text-center text-sm sm:text-xl leading-relaxed text-white font-thin">
+      <p class="text-center text-sm sm:text-xl leading-relaxed text-white">
         焼き餃子協会は、美味しい餃子を<br />作る人と、美味しく焼く人、美味しく<br />食べる人をつなげる団体です。
       </p>
       <div class="w-full flex flex-col items-center gap-4 text-lg text-center font-bold">
